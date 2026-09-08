@@ -1,0 +1,18 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/components/widgets/PageHeader.astro";
+import ContactSectionTwo from "@/components/sections/ContactSectionTwo.astro";
+import { generatePaths } from "@/lib/utils/i18nUtils.ts";
+
+export function getStaticPaths() {
+  return generatePaths();
+}
+---
+
+<Base
+  title="Contacto"
+  metaDescription="Cotiza tu proyecto de domótica, redes, alarmas, videovigilancia, monitoreo o soluciones para tu negocio en Monterrey y su área metropolitana."
+  fitToScreen={false}>
+  <PageHeader content={{ title: "Contacto" }} />
+  <ContactSectionTwo />
+</Base>

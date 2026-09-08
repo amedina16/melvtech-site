@@ -1,0 +1,75 @@
+{
+  "molde_referencia": "domotica",
+  "servicios": [
+    {
+      "nombre": "Domótica",
+      "slug": "domotica",
+      "icono_lucide": "Home",
+      "descripcion_corta": "Automatiza luces, accesos y dispositivos de tu casa o negocio para controlarlos desde tu celular, sin importar dónde estés.",
+      "beneficios": [
+        "Enciende y apaga luces, contactos y equipos desde una sola app",
+        "Programa escenas para que tu casa se adapte a tu rutina",
+        "Controla el acceso a tu propiedad de forma remota",
+        "Se integra con tu sistema de alarmas y cámaras existente"
+      ],
+      "publico": "residencial y comercial",
+      "complementario": ["redes-wifi", "alarmas"]
+    },
+    {
+      "nombre": "Redes y WiFi Mesh",
+      "slug": "redes-wifi",
+      "icono_lucide": "Wifi",
+      "descripcion_corta": "Instalamos redes WiFi mesh que eliminan las zonas muertas de señal en toda tu casa o negocio, sin caídas ni interrupciones.",
+      "beneficios": [
+        "Cobertura uniforme en cada rincón de tu propiedad",
+        "Soporta múltiples dispositivos conectados sin perder velocidad",
+        "Base necesaria para que tus cámaras y domótica funcionen sin fallas",
+        "Configuración profesional adaptada al tamaño de tu espacio"
+      ],
+      "publico": "residencial y comercial",
+      "complementario": ["domotica", "videovigilancia"]
+    },
+    {
+      "nombre": "Alarmas",
+      "slug": "alarmas",
+      "icono_lucide": "BellRing",
+      "descripcion_corta": "Sistemas de alarma que detectan movimiento o intrusión y te avisan de inmediato, con opción de conectarlos a monitoreo activo.",
+      "beneficios": [
+        "Detección de movimiento e intrusión en puertas y ventanas",
+        "Notificaciones inmediatas a tu celular ante cualquier activación",
+        "Se puede combinar con monitoreo para respuesta activa",
+        "Instalación adaptada a casas y negocios de cualquier tamaño"
+      ],
+      "publico": "residencial y comercial",
+      "complementario": ["monitoreo", "videovigilancia"]
+    },
+    {
+      "nombre": "Videovigilancia",
+      "slug": "videovigilancia",
+      "icono_lucide": "Camera",
+      "descripcion_corta": "Nuestra especialidad desde el inicio: cámaras de seguridad confiables para ver tu casa o negocio en tiempo real, desde donde estés.",
+      "beneficios": [
+        "Video en tiempo real desde tu celular o computadora",
+        "Grabación continua con respaldo en la nube o local",
+        "Cobertura interior y exterior según lo que necesites vigilar",
+        "Años de experiencia especializada en esta línea de servicio"
+      ],
+      "publico": "residencial y comercial",
+      "complementario": ["monitoreo", "alarmas"]
+    },
+    {
+      "nombre": "Monitoreo de Cámaras",
+      "slug": "monitoreo",
+      "icono_lucide": "Eye",
+      "descripcion_corta": "Que alguien esté viendo tus cámaras, siempre. Nuestro servicio de monitoreo revisa tu propiedad de forma activa, no solo graba.",
+      "beneficios": [
+        "Supervisión activa de tus cámaras, no solo grabación pasiva",
+        "Aviso inmediato ante actividad sospechosa",
+        "Servicio recurrente que se adapta a tu sistema actual de cámaras",
+        "Complementa tu videovigilancia y alarmas para cobertura completa"
+      ],
+      "publico": "residencial y comercial",
+      "complementario": ["videovigilancia", "alarmas"]
+    }
+  ]
+}

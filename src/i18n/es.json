@@ -1,0 +1,86 @@
+{
+  "common": {
+    "readMore": "Leer más",
+    "readBlog": "Leer artículo",
+    "viewDetails": "Ver detalles",
+    "viewService": "Ver servicio",
+    "readMoreAbout": "Leer más sobre",
+    "learnMore": "Ver más",
+    "learnMoreAbout": "Leer más sobre",
+    "emailPlaceholder": "Correo electrónico",
+    "paginationPrevious": "Anterior",
+    "paginationNext": "Siguiente",
+    "home": "Inicio",
+    "tab": "Pestaña"
+  },
+  "aria": {
+    "breadcrumb": "Ruta de navegación",
+    "closeModal": "Cerrar ventana",
+    "closeOffcanvas": "Cerrar menú lateral",
+    "footer": "Pie de página",
+    "menu": "Menú",
+    "offcanvas": "Panel lateral",
+    "openSidebarContent": "Abrir contenido del menú lateral",
+    "pagination": "Paginación",
+    "playVideo": "Reproducir video",
+    "services": "Servicios",
+    "starRating": "Calificación de 5 estrellas",
+    "tabs": "Pestañas",
+    "toggleNavigation": "Mostrar/ocultar navegación"
+  },
+  "widgets": {
+    "searchTitle": "Buscar",
+    "postSearchFormPlaceholder": "Busca servicios, guías o artículos...",
+    "searchInputPlaceholder": "Escribe para buscar...",
+    "categoriesTitle": "Categorías",
+    "tagsTitle": "Etiquetas",
+    "recentPostsTitle": "Artículos recientes"
+  },
+  "form": {
+    "choose": "Elegir",
+    "fallbackLabel": "Define una etiqueta",
+    "fallbackName": "Define un valor de nombre",
+    "fallbackPlaceholder": "Define un texto indicativo",
+    "invalidSelect": "Selecciona una opción válida.",
+    "sendMessage": "Enviar",
+    "validSelect": "¡Perfecto!",
+    "submitting": "Enviando formulario...",
+    "unknownProvider": "Proveedor de formulario desconocido.",
+    "submissionFallback": "Usa el correo de contacto configurado para enviar tu solicitud."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "heading": "Ups, esta página no existe",
+    "description": "La página que buscas no se encuentra. Revisa la URL e intenta de nuevo, o vuelve al inicio.",
+    "buttonLabel": "Volver al inicio"
+  },
+  "headerOffcanvas": {
+    "description": "Diseñamos, instalamos y damos soporte a sistemas de domótica, redes, alarmas, videovigilancia y monitoreo para hogares y negocios en Monterrey y su área metropolitana.",
+    "addressLabel": "Dirección",
+    "contactLabel": "Contacto"
+  },
+  "blog": {
+    "authorPrefix": "Por",
+    "category": "Categoría",
+    "tagsLabel": "Etiquetas:",
+    "share": "Compartir:",
+    "paginationPrevious": "Publicación anterior",
+    "paginationNext": "Publicación siguiente"
+  },
+  "navigation": {
+    "buttonLabel": "Contáctanos"
+  },
+  "select": {
+    "loading": "Cargando...",
+    "noResults": "Sin resultados",
+    "searchPlaceholder": "Buscar..."
+  },
+  "footer": {
+    "description": "En MelvTech diseñamos, instalamos y damos soporte a sistemas de domótica, redes, alarmas, videovigilancia y monitoreo para hogares y negocios en Monterrey y su área metropolitana.",
+    "quickLinksTitle": "Enlaces rápidos",
+    "servicesTitle": "Servicios",
+    "informationTitle": "Información",
+    "copyright": "Copyright © 2026 MelvTech. Todos los derechos reservados.",
+    "_comment": "Footer text matches the default footer design. Update this value if the product copyright changes."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "header": [
+    {
+      "enable": true,
+      "name": "Inicio",
+      "url": "/"
+    },
+    {
+      "enable": true,
+      "name": "Servicios",
+      "url": "/services/",
+      "hasChildren": true,
+      "children": [
+        {
+          "enable": true,
+          "name": "Todos los servicios",
+          "url": "/services/"
+        },
+        {
+          "enable": true,
+          "name": "Domótica",
+          "url": "/services/domotica/"
+        },
+        {
+          "enable": true,
+          "name": "Redes y WiFi Mesh",
+          "url": "/services/redes-wifi/"
+        },
+        {
+          "enable": true,
+          "name": "Alarmas",
+          "url": "/services/alarmas/"
+        },
+        {
+          "enable": true,
+          "name": "Videovigilancia",
+          "url": "/services/videovigilancia/"
+        },
+        {
+          "enable": true,
+          "name": "Monitoreo de Cámaras",
+          "url": "/services/monitoreo/"
+        },
+        {
+          "enable": true,
+          "name": "Control de Accesos",
+          "url": "/services/control-accesos/"
+        },
+        {
+          "enable": true,
+          "name": "Cableado Estructurado",
+          "url": "/services/cableado-estructurado/"
+        },
+        {
+          "enable": true,
+          "name": "Infraestructura de Redes",
+          "url": "/services/infraestructura-redes/"
+        },
+        {
+          "enable": true,
+          "name": "Administrador de Servidores",
+          "url": "/services/administrador-servidores/"
+        },
+        {
+          "enable": true,
+          "name": "Pólizas de Soporte Técnico",
+          "url": "/services/polizas-soporte-tecnico/"
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "name": "Empresas",
+      "url": "/empresas/"
+    },
+    {
+      "enable": true,
+      "name": "Precios",
+      "url": "/precios/"
+    },
+    {
+      "enable": true,
+      "name": "Nosotros",
+      "url": "/nosotros/"
+    },
+    {
+      "enable": true,
+      "name": "Contacto",
+      "url": "/contacto/"
+    }
+  ]
+}

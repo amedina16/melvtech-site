@@ -1,13 +1,13 @@
 # Site Configuration
 [site]
-  title            = "Techlo Lite" # Shared title for SEO and OpenGraph
+  title            = "MelvTech" # Shared title for SEO and OpenGraph
   description      = "Techlo Lite is a free IT solutions and services theme for managed IT services, cloud consulting, cybersecurity, software development, and digital transformation websites." # Shared description for SEO and OpenGraph
-  tagline          = "Free IT Solutions & Services Astro & Tailwind CSS Theme"
+  tagline          = "Hogar conectado y seguridad para Monterrey y su área metropolitana"
   taglineSeparator = "" # default is " - " 
   baseUrl          = "https://techlo-lite-astro.pages.dev/" # Base URL for the site and used in OpenGraph meta tags.
   logo             = "/images/logo.svg" # Path to the site's logo
   logoAlternate    = "" # Path to the site's logo
-  logoText         = "Techlo" # Text displayed next to the logo
+  logoText         = "MelvTech" # Text displayed next to the logo
   logoWidth        = "24px" # Width of the logo
   logoHeight       = "36px" # Height of the logo
 
@@ -113,15 +113,15 @@
     # Set `enable` to `true` for enabling the multilingual feature or `false` for disabling it.
     # Run `npm run remove-multilingual` for removing multilingual content files after disabling the feature.
     enable               = true
-    defaultLanguage      = "en"
+    defaultLanguage      = "es"
     disableLanguages     = [""] # List of languages to disable (eg: ["fr", "es"])
     showDefaultLangInUrl = false # Show default language in URL (eg: https://getastrothemes.com/en/)
 
   # Global Contact Information
   [settings.contactInfo]
-    phone       = "[518-564-3200](tel:5185643200)"
-    email       = "[hello@example.com](mailto:hello@example.com)"
-    address     = "1791 Yorkshire Circle Kitty <br /> Hawk, NC 279499"
+    phone       = "{{DATO_FALTANTE: telefono}}"
+    email       = "{{DATO_FALTANTE: email}}"
+    address     = "{{DATO_FALTANTE: direccion}}"
     officeHours = "Office Hours: 8:00 AM – 10:00 PM"
 
   # Header Offcanvas Configuration
@@ -135,13 +135,13 @@
     [settings.headerOffcanvas.button]
       enable = true
       label  = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the button label in different languages or directly add value here if you are not using internationalization feature
-      url    = "/#contact"
+      url    = "/contacto/"
 
 # Navigation Button In Header
 [settings.navigationButton]
   enable = true
   label  = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the navigation button label in different languages or directly add value here if you are not using internationalization feature
-  url    = "/#contact"
+  url    = "/contacto/"
 
 [settings.markup.tableOfContents]
   enable     = true
