@@ -18,8 +18,8 @@
         },
         {
           "enable": true,
-          "name": "Domótica",
-          "url": "/services/domotica/"
+          "name": "Domótica y casas inteligentes",
+          "url": "/domotica-casas-inteligentes/"
         },
         {
           "enable": true,
@@ -93,7 +93,7 @@
     {
       "label": "Hogar",
       "list": [
-        { "enable": true, "name": "Domótica", "url": "/services/domotica/" },
+        { "enable": true, "name": "Domótica y casas inteligentes", "url": "/domotica-casas-inteligentes/" },
         { "enable": true, "name": "Redes y WiFi Mesh", "url": "/services/redes-wifi/" },
         { "enable": true, "name": "Alarmas", "url": "/services/alarmas/" },
         { "enable": true, "name": "Videovigilancia", "url": "/services/videovigilancia/" },

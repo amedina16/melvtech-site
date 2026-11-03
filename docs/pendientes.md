@@ -22,6 +22,33 @@ Abiertos:
   el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
 - **Hosting** (Cloudflare Pages / Vercel / Netlify) y conexión del dominio.
 
+## Landing "Domótica y casas inteligentes" (2026-11-03)
+
+Página pilar en `/domotica-casas-inteligentes/` (contenido y FAQ en
+`src/data/landing-domotica.ts`; el FAQ visible y el JSON-LD salen de los mismos datos).
+`/services/domotica/` quedó con canonical hacia la landing y fuera del sitemap.
+Incluye `public/llms.txt`.
+
+Para mejorar posicionamiento y citas de IA faltan estos datos reales (no se inventaron):
+
+- **Proyectos reales** en Monterrey con fotos propias (tipo de vivienda y zona aproximada).
+- **Testimonios o reseñas** reales de clientes.
+- **Años de experiencia**, marcas con las que trabajan y certificaciones.
+- **Municipios** del área metropolitana donde sí dan servicio (hoy solo dice
+  "Monterrey y su área metropolitana").
+- **Dirección y teléfono** para añadir `LocalBusiness` al schema (hoy es `Organization` +
+  `Service`) y crear/optimizar el Perfil de Negocio de Google.
+- **Fecha**: actualizar `UPDATED_ISO`/`UPDATED_LABEL` en `landing-domotica.ts` cuando se
+  edite la página (la fecha visible es una señal de frescura).
+
+Cuando el dominio esté publicado: dar de alta Search Console y Bing Webmaster, enviar
+`sitemap-index.xml`, y medir mensualmente 10 a 20 consultas (ej. "domótica Monterrey",
+"casas inteligentes Monterrey", "qué es la domótica", "Alexa casa inteligente Monterrey")
+en Google, ChatGPT y Perplexity, repitiendo cada una varias veces.
+
+El selector de idioma de esta página enlaza a `/en/domotica-casas-inteligentes/`, que no
+existe. Se resuelve al apagar el inglés (bloqueador #1 de arriba).
+
 ## Datos de contacto
 
 - Email: `atencion@melvtech.com` (listo).

@@ -15,6 +15,7 @@ const {
   disableTagline,
   author = config.seo.author,
   robots = config.seo.robots,
+  disableAlternates = false,
 } = Astro.props;
 
 // Normalize title and description
@@ -46,6 +47,7 @@ const resolvedCanonical = getLocaleUrlCTM(
 const alternateTags: Array<{ hreflang: string; href: string }> = [];
 if (
   config.settings.multilingual.enable &&
+  !disableAlternates &&
   !resolvedCanonical.includes("blog/category/")
 ) {
   supportedLanguages.forEach((lang) => {

@@ -1,0 +1,40 @@
+# MelvTech
+
+> MelvTech instala domótica y casas inteligentes, redes y WiFi, alarmas, videovigilancia y monitoreo de cámaras para hogares y negocios en Monterrey y su área metropolitana, Nuevo León, México. Empezó como especialista en videovigilancia. Cotiza después de un diagnóstico y no publica precios cerrados.
+
+## Servicios para el hogar
+
+- [Domótica y casas inteligentes](https://melvtech.com/domotica-casas-inteligentes/): qué es la domótica, qué se controla con Amazon Alexa, compatibilidad Zigbee y Matter, proceso de instalación y preguntas frecuentes.
+- [Redes y WiFi Mesh](https://melvtech.com/services/redes-wifi/): cobertura WiFi uniforme en casas y negocios.
+- [Alarmas](https://melvtech.com/services/alarmas/): detección de movimiento e intrusión con aviso inmediato.
+- [Videovigilancia](https://melvtech.com/services/videovigilancia/): cámaras de seguridad para ver la propiedad en tiempo real.
+- [Monitoreo de cámaras](https://melvtech.com/services/monitoreo/): supervisión activa de las cámaras.
+
+## Servicios para empresas
+
+- [Soluciones para empresas](https://melvtech.com/empresas/)
+- [Control de accesos](https://melvtech.com/services/control-accesos/)
+- [Cableado estructurado](https://melvtech.com/services/cableado-estructurado/)
+- [Infraestructura de redes](https://melvtech.com/services/infraestructura-redes/)
+- [Administrador de servidores](https://melvtech.com/services/administrador-servidores/)
+- [Pólizas de soporte técnico](https://melvtech.com/services/polizas-soporte-tecnico/)
+
+## Información
+
+- [Nosotros](https://melvtech.com/nosotros/)
+- [Cómo cotizamos](https://melvtech.com/precios/)
+- [Contacto](https://melvtech.com/contacto/)
+
+## Blog
+
+Artículos de seguridad basados en datos oficiales del INEGI (ENVIPE 2025, Nuevo León).
+
+- [Qué dice la ENVIPE 2025 sobre la inseguridad en Nuevo León](https://melvtech.com/blog/inseguridad-nuevo-leon-envipe-2025/)
+- [Cuánto le cuesta la inseguridad a los hogares de Nuevo León](https://melvtech.com/blog/costo-inseguridad-hogares-nuevo-leon/)
+- [1 de cada 4 hogares en Nuevo León fue víctima de un delito en 2024](https://melvtech.com/blog/victimizacion-hogares-nuevo-leon/)
+- [Por qué el 92.7% de los delitos en Nuevo León queda sin castigo](https://melvtech.com/blog/cifra-oculta-delitos-nuevo-leon/)
+- [Cómo el miedo al delito cambia la rutina en Nuevo León](https://melvtech.com/blog/miedo-al-delito-rutina-nuevo-leon/)
+
+## Contacto
+
+- Correo: atencion@melvtech.com

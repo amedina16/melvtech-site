@@ -245,8 +245,16 @@ async function processSitemaps() {
 
         // Remove draft/excluded URLs
         // Match on either customSlug or generated url path
+        // Compare whole path segments so "domotica" does not match
+        // "/domotica-casas-inteligentes/".
+        const segs = pathname.split("/").filter(Boolean);
         for (const bad of excludedUrlSet) {
-          if (bad && pathname.includes(bad)) return false;
+          if (!bad) continue;
+          const badSegs = String(bad).split("/").filter(Boolean);
+          if (badSegs.length === 0) continue;
+          for (let i = 0; i + badSegs.length <= segs.length; i++) {
+            if (badSegs.every((s, j) => segs[i + j] === s)) return false;
+          }
         }
 
         return true;

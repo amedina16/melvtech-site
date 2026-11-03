@@ -21,10 +21,11 @@ const { icon, title, description, image, button, collection } = {
 };
 
 const t = await useTranslations(Astro.currentLocale as string);
+// Si la entrada define su propia URL (button.url), se usa tal cual, sin anteponer la colección.
 const slugLocale = getLocaleUrlCTM(
   button?.url ? button.url : extractSlug(content),
   Astro.currentLocale,
-  collection,
+  button?.url ? undefined : collection,
 );
 
 const isGrid = options?.layout === "grid";

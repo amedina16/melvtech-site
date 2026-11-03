@@ -108,10 +108,10 @@ const cursorLabel = t("common.readBlog");
         {image && (
           <OptimizedImage
             src={image}
-            alt={toSentenceCase("Image related to " + title)}
+            alt={plainify(title || "")}
             class="size-full object-cover transition duration-500 group-hover:scale-102"
-            width={600}
-            height={600}
+            width={624}
+            height={510}
           />
         )}
         <a
