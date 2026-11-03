@@ -36,7 +36,7 @@ const sizeClass = size === "compact" ? "py-3 text-sm" : "py-4 text-sm";
     class="container flex flex-wrap items-center justify-center gap-4 md:justify-between">
     <div class="relative flex flex-wrap items-center gap-4 lg:flex-nowrap">
       {
-        resolvedLeftContent.includes("office-hours") && (
+        resolvedLeftContent.includes("office-hours") && officeHours && (
           <div class="flex items-center gap-2">
             <DynamicIcon name="Clock" class="size-4 shrink-0" />
             <span set:html={markdownify(officeHours)} />
@@ -45,7 +45,7 @@ const sizeClass = size === "compact" ? "py-3 text-sm" : "py-4 text-sm";
       }
 
       {
-        resolvedLeftContent.includes("location") && (
+        resolvedLeftContent.includes("location") && address && (
           <div class="flex items-center gap-2">
             <DynamicIcon name="MapPin" class="size-4 shrink-0" />
             <span class="hide-line-breaks" set:html={markdownify(address)} />
@@ -56,15 +56,23 @@ const sizeClass = size === "compact" ? "py-3 text-sm" : "py-4 text-sm";
 
     <div
       class="flex flex-wrap items-center justify-center gap-4 md:justify-between md:gap-10">
-      <div class="flex items-center gap-2 hover:underline">
-        <DynamicIcon name="Phone" class="size-4 shrink-0" />
-        <span set:html={markdownify(phone)} />
-      </div>
+      {
+        phone && (
+          <div class="flex items-center gap-2 hover:underline">
+            <DynamicIcon name="Phone" class="size-4 shrink-0" />
+            <span set:html={markdownify(phone)} />
+          </div>
+        )
+      }
 
-      <div class="flex items-center gap-2 hover:underline">
-        <DynamicIcon name="Mail" class="size-4 shrink-0" />
-        <span set:html={markdownify(email)} />
-      </div>
+      {
+        email && (
+          <div class="flex items-center gap-2 hover:underline">
+            <DynamicIcon name="Mail" class="size-4 shrink-0" />
+            <span set:html={markdownify(email)} />
+          </div>
+        )
+      }
     </div>
   </div>
 </div>

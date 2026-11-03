@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 image: "/images/blog/blog-header.png"
-metaDescription: "Lisez des articles pratiques sur la livraison logicielle, les opérations cloud, la cybersécurité, l'automatisation et la stratégie numérique."
+metaDescription: "Datos oficiales y consejos prácticos sobre seguridad, domótica y videovigilancia para hogares y negocios en Monterrey y su área metropolitana."
 draft: false
 
 # Settings of blog list page layout

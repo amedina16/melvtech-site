@@ -1,10 +1,10 @@
 # Site Configuration
 [site]
   title            = "MelvTech" # Shared title for SEO and OpenGraph
-  description      = "Techlo Lite is a free IT solutions and services theme for managed IT services, cloud consulting, cybersecurity, software development, and digital transformation websites." # Shared description for SEO and OpenGraph
-  tagline          = "Hogar conectado y seguridad para Monterrey y su área metropolitana"
-  taglineSeparator = "" # default is " - " 
-  baseUrl          = "https://techlo-lite-astro.pages.dev/" # Base URL for the site and used in OpenGraph meta tags.
+  description      = "MelvTech instala domótica, redes, alarmas, videovigilancia y monitoreo para hogares y negocios en Monterrey y su área metropolitana." # Shared description for SEO and OpenGraph
+  tagline          = "MelvTech"
+  taglineSeparator = " | " # default is " - "
+  baseUrl          = "https://melvtech.com/" # Base URL for the site and used in OpenGraph meta tags.
   logo             = "/images/logo.svg" # Path to the site's logo
   logoAlternate    = "" # Path to the site's logo
   logoText         = "MelvTech" # Text displayed next to the logo
@@ -25,14 +25,15 @@
 # Specific SEO configurations that complement the general site settings.
 # -----------------------------------------------------------------------------------------------------------------------------------
 [seo]
-  author = "Getastrothemes"
+  author = "MelvTech"
   keywords = [
-    "astro technology template",
-    "astro template",
-    "astro theme",
-    "free astro theme",
-    "it solution theme",
-    "technology astro theme",
+    "domótica Monterrey",
+    "videovigilancia Monterrey",
+    "alarmas Monterrey",
+    "cableado estructurado Monterrey",
+    "control de accesos",
+    "redes WiFi",
+    "soporte técnico para empresas",
   ]
   robots = "index, follow" # Instructs search engines on how to crawl and index the pages.
 
@@ -42,7 +43,7 @@
 
   [seo.sitemap]
     enable  = true # Enables or disables sitemap generation on site build
-    exclude = [] # exclude all pages that include these folder names
+    exclude = ["/tag/", "/category/"] # exclude all pages that include these folder names
 
 
 # Different theme settings
@@ -61,7 +62,7 @@
 
   # docs - https://formspree.io/ | https://formsubmit.co/ | https://docs.netlify.com/forms/setup/
   # Form action URL for the contact form (For more settings related to form see "src/content/sections/contact-section.md")
-  contactFormAction = "https://formsubmit.co/temp.gats@gmail.com" # https://formspree.io/f/kweoweo | https://formsubmit.co/your@email.com | "/"
+  contactFormAction = "https://formsubmit.co/atencion@melvtech.com" # https://formspree.io/f/kweoweo | https://formsubmit.co/your@email.com | "/"
   # formspree | formsubmit.co | netlify (default is formsubmit.co)
   contactFormProvider = "formsubmit.co"
 
@@ -100,7 +101,7 @@
 
   # Mailchimp Subscription Form located in footer
   [settings.subscription]
-    enable            = true # Enables or disable the subscription form
+    enable            = false # Enables or disable the subscription form
     title             = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the title in different languages or directly add value here if you are not using internationalization feature
     note              = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the note in different languages or directly add value here if you are not using internationalization feature
     formAction        = "https://gmail.us11.list-manage.com/subscribe/post?u=d870b06d86c16269e4b1f9b39&amp;id=12cf0c6ac2&amp;f_id=007e61e1f0"
@@ -119,10 +120,10 @@
 
   # Global Contact Information
   [settings.contactInfo]
-    phone       = "{{DATO_FALTANTE: telefono}}"
-    email       = "{{DATO_FALTANTE: email}}"
-    address     = "{{DATO_FALTANTE: direccion}}"
-    officeHours = "Office Hours: 8:00 AM – 10:00 PM"
+    phone       = "" # pendiente de confirmar; vacío = no se muestra
+    email       = "[atencion@melvtech.com](mailto:atencion@melvtech.com)"
+    address     = "" # pendiente; vacío = no se muestra
+    officeHours = "" # pendiente de confirmar horario real; vacío = no se muestra
 
   # Header Offcanvas Configuration
   # Update social links in `src/config/social.json`
@@ -156,7 +157,7 @@
 # -----------------------------------------------------------------------------------------------------------------------------------
 [opengraph]
   image       = "/images/og-image.jpg" # Image used in OpenGraph previews
-  ogLocale    = "en_US" # Locale setting for OpenGraph
+  ogLocale    = "es_MX" # Locale setting for OpenGraph
   ogType      = "website" # Type of content for OpenGraph protocol
   twitter     = "" # Twitter handle for Twitter Card meta tags
   twitterCard = "summary_large_image" # Type of Twitter Card to use in social sharing

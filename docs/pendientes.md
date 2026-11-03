@@ -1,15 +1,34 @@
 # Pendientes — MelvTech Web (v2 / techlo-lite-astro)
 
-Última actualización: 2026-09-08
+Última actualización: 2026-09-11
 
-## Datos de contacto reales
+## Bloqueadores de lanzamiento (auditoría SEO 2026-11-03)
 
-Hoy son placeholders `{{DATO_FALTANTE: ...}}` visibles en el sitio. Faltan:
+Resueltos: dominio `melvtech.com` (canonical/sitemap/robots/OG), títulos cortos
+(`X | MelvTech`), metadatos del theme reemplazados, footer con navegación, redes falsas
+desactivadas, tag/category fuera del sitemap, formularios enviando a
+`atencion@melvtech.com`, suscripción Mailchimp del theme desactivada.
 
-- Teléfono real → `src/config/config.toml` (`settings.contactInfo.phone`)
-- Email real → `src/config/config.toml` (`settings.contactInfo.email`)
-- Dirección real → `src/config/config.toml` (`settings.contactInfo.address`) y
-  `src/content/sections/spanish/contact-section-two.md` (bloque `info`)
+Abiertos:
+
+- **Apagar inglés** (`disableLanguages = ["en"]` en `config.toml`): `/en/` son 77 páginas
+  demo del theme con hreflang roto (apuntan a `/en/...` inexistentes → 404).
+- **Ocultar testimonios y equipo demo** (`testimonial.md`, `team-section.md`) y excluir
+  `/team/` del sitemap: nombres y citas falsas indexables.
+- **Aviso de Privacidad en español** (LFPDPPP; el formulario recolecta datos personales).
+  Privacidad y Términos siguen en francés. Requiere razón social y domicilio fiscal;
+  revisión legal recomendada.
+- **FormSubmit**: tras publicar, enviar un mensaje de prueba por `/contacto/` y activar
+  el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
+- **Hosting** (Cloudflare Pages / Vercel / Netlify) y conexión del dominio.
+
+## Datos de contacto
+
+- Email: `atencion@melvtech.com` (listo).
+- Teléfono, dirección y horario: **pendientes de confirmar**. En `config.toml`
+  (`settings.contactInfo`) están vacíos y el sitio los omite automáticamente; al
+  llenarlos reaparecen en topbar, footer y menú lateral. El horario del theme era
+  inventado y se eliminó.
 
 ## Imágenes pendientes
 
@@ -32,6 +51,28 @@ Las imágenes principales ya están cargadas (`domotica.webp`, `redes-wifi.webp`
 `src/assets/images/services/`). **Falta la imagen secundaria** (`<ImageList>`) en cada
 uno de esos 5 archivos `.mdx` — sigue como `{{DATO_FALTANTE: imagen_secundaria_...}}`.
 
+### Blog (5 placeholders, uno por artículo)
+
+Cada uno de los 5 artículos reales (ver sección "Blog" abajo) tiene su `image:` de
+portada sin resolver, con el placeholder `{{DATO_FALTANTE: imagen_articulo_...}}` en
+`src/content/blog/spanish/`.
+
+## Blog
+
+Se publicaron 5 artículos reales, todos basados en la ENVIPE 2025 (INEGI) edición
+Nuevo León — cada cifra fue verificada contra el PDF oficial (no generada por IA sin
+fuente) y lleva su atribución "Fuente: INEGI, ENVIPE 2025, Nuevo León" en el texto:
+
+- `inseguridad-nuevo-leon-envipe-2025.mdx` — percepción de inseguridad (Alarmas, Videovigilancia)
+- `costo-inseguridad-hogares-nuevo-leon.mdx` — costo económico del delito (Alarmas)
+- `victimizacion-hogares-nuevo-leon.mdx` — 1 de cada 4 hogares víctima (Videovigilancia, Monitoreo)
+- `cifra-oculta-delitos-nuevo-leon.mdx` — 92.7% de delitos sin castigo (Videovigilancia, Monitoreo)
+- `miedo-al-delito-rutina-nuevo-leon.mdx` — miedo y cambios de rutina (Domótica, Monitoreo)
+
+Se borraron los 16 posts de demo en francés que traía el theme. Falta: imágenes de
+portada (ver arriba) y, si se quiere ampliar el blog, definir de dónde saldrán las
+próximas fuentes de datos verificables (no hay más PDFs oficiales cargados por ahora).
+
 ## Contenido sin traducir (queda como demo, decisión consciente)
 
 Estas secciones se dejaron intencionalmente con el texto de demo del theme (francés /
@@ -40,8 +81,6 @@ genérico) hasta tener contenido real de MelvTech:
 - **Testimonios** (`src/content/sections/spanish/testimonial.md`) — citas y nombres
   falsos del theme.
 - **Equipo** (`src/content/team/spanish/`) — perfiles de demo (Daniyel Karlos, etc.).
-- **Blog** (`src/content/blog/spanish/`, `src/content/sections/spanish/blog-section.md`)
-  — posts de ejemplo del theme.
 
 ## Contenido de empresas — falta profundizar
 
@@ -63,11 +102,12 @@ idioma mientras tanto.
 
 ## Deuda técnica menor
 
-- **Breadcrumb en `/services/*`**: muestra "Services" en vez de "Servicios" y pierde
-  acentos (ej. "Polizas soporte tecnico"), porque `PageHeader.astro` arma el breadcrumb
-  a partir del slug de la URL, no del `title` del contenido. Afecta a todas las páginas
-  de servicio por igual. Requiere tocar un componente compartido
-  (`src/layouts/components/widgets/PageHeader.astro`).
+- **Breadcrumb en `/services/*` y `/blog/*`**: muestra el slug de la URL humanizado en
+  vez del `title` real del contenido (ej. "Polizas soporte tecnico" en vez de "Pólizas
+  de Soporte Técnico", o "Blog" > "Inseguridad nuevo leon envipe 2025"), porque
+  `PageHeader.astro` arma el breadcrumb a partir de la URL, no del contenido. Afecta a
+  todas las páginas de servicio y de blog por igual. Requiere tocar un componente
+  compartido (`src/layouts/components/widgets/PageHeader.astro`).
 - **`config.generated.json` puede quedar desactualizado**: se genera desde
   `src/config/config.toml` vía `node scripts/toml-watcher.mjs` (o el watcher de
   `npm run dev`). Si se edita `config.toml` a mano y el sitio no refleja el cambio,
@@ -80,6 +120,5 @@ idioma mientras tanto.
   falta decidir dónde se va a alojar el sitio real.
 - **Dominio**: falta definir y conectar el dominio real de MelvTech
   (`baseUrl` en `config.toml` sigue apuntando al dominio de demo del theme).
-- **`npm run astro-check` / `npm run build`**: no se ha corrido una verificación de
-  build completa desde que se agregaron los servicios de empresa — conviene correrlo
-  antes de desplegar a producción.
+- **`npm run astro-check` / `npm run build`**: verificado limpio (0 errores) al agregar
+  los servicios de empresa y el blog — volver a correrlo antes de cada deploy.

@@ -61,6 +61,7 @@ const footerSocials = social.main
             )
           }
           <div class="mt-4 flex flex-wrap gap-4">
+            {phone && (
             <div class="flex items-center gap-2 hover:underline">
               <svg
                 width="20"
@@ -75,7 +76,9 @@ const footerSocials = social.main
               </svg>
               <span set:html={markdownify(phone)} />
             </div>
+            )}
 
+            {email && (
             <div class="flex items-center gap-2 hover:underline">
               <svg
                 width="20"
@@ -91,6 +94,7 @@ const footerSocials = social.main
 
               <span set:html={markdownify(email)} />
             </div>
+            )}
           </div>
 
           <SocialComponent

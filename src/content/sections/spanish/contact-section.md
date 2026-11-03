@@ -2,7 +2,7 @@
 enable: true # Control the visibility of this section across all pages where it is used
 title: "¿Tienes un proyecto en mente?"
 description: "¡Perfecto! Nos encanta escucharte, empecemos juntos"
-officeHours: "Horario de atención: lun. - sáb.: 8:00 AM - 10:00 PM" # Optional; remove or set empty to hide this row.
+officeHours: "" # Optional; remove or set empty to hide this row.
 
 # Check config.toml file for form action related settings
 # this is also used in the footer of the personal portfolio homepage
