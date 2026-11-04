@@ -25,8 +25,9 @@ Abiertos:
   revisión legal recomendada.
 - **FormSubmit**: tras publicar, enviar un mensaje de prueba por `/contacto/` y activar
   el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
-- **Hosting: Dokploy.** `Dockerfile`, `deploy/` y guía en `docs/despliegue-dokploy.md`. Falta
-  probar `docker build` (Docker Desktop estaba apagado) y conectar el dominio.
+- **Hosting: Dokploy.** `Dockerfile`, `deploy/` y guía en `docs/despliegue-dokploy.md`. Imagen probada en
+  local el 2026-11-04 (build, healthcheck, redirecciones, gzip, caché, 404). Falta crear la
+  aplicación en Dokploy y conectar el dominio.
 
 ## Landing "Domótica y casas inteligentes" (2026-11-03)
 
