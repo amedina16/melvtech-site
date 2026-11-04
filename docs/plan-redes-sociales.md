@@ -296,6 +296,26 @@ De 5 a 8 por post en Instagram, mismos grupos por pilar. En Facebook, pocos o ni
 5. Si habrá cara en los Reels (voz, persona o solo gráficos).
 6. Visto bueno del tono y de los 12 posts.
 
-**Siguiente paso propuesto:** construir el generador de artes con las 7 plantillas, producir
-las 12 piezas del mes 1 junto con foto de perfil, portada de Facebook y portadas de
-destacadas, y revisarlas contigo antes de programar.
+## 13. Estado de las artes (2026-11-04)
+
+El generador ya existe: `design/social/make_social.py` lee `design/social/calendario.json`
+(textos, fuentes y captions de los 12 posts) y exporta a `design/social/out/` (no se sube
+a git; se regenera):
+
+```bash
+python design/social/make_social.py          # todo
+python design/social/make_social.py S1-M     # un post
+python design/social/make_social.py brand    # perfil, portada FB, destacadas
+```
+
+- `out/posts/<código>/` 42 slides PNG de 1080 × 1350 (los 12 posts del mes 1).
+- `out/marca/` foto de perfil 1080², portada de Facebook 820 × 360 y 5 portadas de destacadas.
+- `out/textos-mes1.md` texto de publicación, enlace con UTM y hashtags de cada post.
+
+Implementadas las plantillas A (dato), B (carrusel), E (lista), G (marca) y la de cierre.
+**Faltan C, D y F**, que necesitan foto o diseño aparte (D y F requieren fotos reales).
+En lugar de íconos Lucide, la lista usa números en círculo azul.
+Pendiente: versiones 9:16 para Stories y los Reels.
+
+**Siguiente paso:** revisar las 12 piezas contigo (tono, textos, cifras), y con tus
+respuestas de la sección 12 abrir las cuentas.

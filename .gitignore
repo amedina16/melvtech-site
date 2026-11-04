@@ -33,3 +33,5 @@ pnpm-workspace.yaml
 .vercel
 
 .claude
+# artes generadas (se regeneran con design/social/make_social.py)
+design/social/out/
