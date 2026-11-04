@@ -43,7 +43,7 @@
 
   [seo.sitemap]
     enable  = true # Enables or disables sitemap generation on site build
-    exclude = ["/tag/", "/category/"] # exclude all pages that include these folder names
+    exclude = ["/tag/", "/category/", "/team/"] # exclude all pages that include these folder names
 
 
 # Different theme settings

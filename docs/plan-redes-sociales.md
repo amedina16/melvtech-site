@@ -298,14 +298,14 @@ De 5 a 8 por post en Instagram, mismos grupos por pilar. En Facebook, pocos o ni
 
 ## 13. Estado de las artes (2026-11-04)
 
-El generador ya existe: `design/social/make_social.py` lee `design/social/calendario.json`
+El generador ya existe: `design/social/make_social.py` (carpeta `design/` en la raíz, fuera del repo del sitio) lee `design/social/calendario.json`
 (textos, fuentes y captions de los 12 posts) y exporta a `design/social/out/` (no se sube
 a git; se regenera):
 
 ```bash
-python design/social/make_social.py          # todo
-python design/social/make_social.py S1-M     # un post
-python design/social/make_social.py brand    # perfil, portada FB, destacadas
+python ../design/social/make_social.py          # todo
+python ../design/social/make_social.py S1-M     # un post
+python ../design/social/make_social.py brand    # perfil, portada FB, destacadas
 ```
 
 - `out/posts/<código>/` 42 slides PNG de 1080 × 1350 (los 12 posts del mes 1).

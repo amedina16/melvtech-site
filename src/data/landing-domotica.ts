@@ -14,6 +14,23 @@ export const meta = {
   ogImage: "/images/og/domotica-casas-inteligentes.jpg",
 };
 
+// Textos de interfaz de la landing (el componente es el mismo en ambos idiomas).
+export const ui = {
+  home: "Inicio",
+  services: "Servicios",
+  pageName: "Domótica y casas inteligentes",
+  breadcrumbAria: "Ruta de navegación",
+  heroAlt:
+    "Persona controlando la iluminación de su sala desde una app de casa inteligente en el celular",
+  sourceLabel: "Fuente",
+  midAria: "Wi-Fi, seguridad y alcance",
+  quoteCta: "Pedir mi cotización",
+  orWrite: "También puedes escribirnos a ",
+  faqH2: "Preguntas frecuentes sobre domótica y casas inteligentes en Monterrey",
+  sourcesH2: "Fuentes y actualización",
+  madeBy: "Elaborado por el equipo de MelvTech. Última actualización: ",
+};
+
 export const hero = {
   eyebrow: "Domótica en Monterrey y su área metropolitana",
   h1: "Domótica y casas inteligentes en Monterrey",

@@ -1,0 +1,12 @@
+node_modules
+dist
+.astro
+.git
+.github
+.claude
+docs
+scripts/.translate_cache.json
+generate_services_mdx.py
+servicios-data.json
+Dockerfile
+.dockerignore

@@ -1,6 +1,6 @@
 # Pendientes — MelvTech Web (v2 / techlo-lite-astro)
 
-Última actualización: 2026-09-11
+Última actualización: 2026-11-04
 
 ## Bloqueadores de lanzamiento (auditoría SEO 2026-11-03)
 
@@ -11,16 +11,22 @@ desactivadas, tag/category fuera del sitemap, formularios enviando a
 
 Abiertos:
 
-- **Apagar inglés** (`disableLanguages = ["en"]` en `config.toml`): `/en/` son 77 páginas
-  demo del theme con hreflang roto (apuntan a `/en/...` inexistentes → 404).
-- **Ocultar testimonios y equipo demo** (`testimonial.md`, `team-section.md`) y excluir
-  `/team/` del sitemap: nombres y citas falsas indexables.
-- **Aviso de Privacidad en español** (LFPDPPP; el formulario recolecta datos personales).
+- ~~**Inglés**~~ Resuelto (2026-11-04): el sitio se queda bilingüe. Contenido en inglés
+  traducido (home, servicios, páginas, blog, landing) y las 77 páginas demo del theme
+  eliminadas. La landing tiene URL propia: `/en/smart-home-monterrey/` (par hreflang de
+  `/domotica-casas-inteligentes/`, ver `PATH_ALIASES` en `i18nUtils.ts`).
+  Pendiente opcional: slugs en inglés para el resto (`/en/contacto/`, `/en/precios/`,
+  `/en/services/alarmas/`...) con el mismo mecanismo de alias.
+- ~~**Testimonios y equipo demo**~~ Testimonios ocultos en ambos idiomas
+  (`enable: false`); `/team/` fuera del sitemap. Siguen existiendo las páginas `/team/` y el
+  contenido demo en `src/content/team/`: borrarlas o marcarlas `noindex` antes de publicar.
+- **Aviso de Privacidad (ES y EN)** (LFPDPPP; el formulario recolecta datos personales).
   Privacidad y Términos siguen en francés. Requiere razón social y domicilio fiscal;
   revisión legal recomendada.
 - **FormSubmit**: tras publicar, enviar un mensaje de prueba por `/contacto/` y activar
   el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
-- **Hosting** (Cloudflare Pages / Vercel / Netlify) y conexión del dominio.
+- **Hosting: Dokploy.** `Dockerfile`, `deploy/` y guía en `docs/despliegue-dokploy.md`. Falta
+  probar `docker build` (Docker Desktop estaba apagado) y conectar el dominio.
 
 ## Landing "Domótica y casas inteligentes" (2026-11-03)
 
@@ -149,3 +155,12 @@ idioma mientras tanto.
   (`baseUrl` en `config.toml` sigue apuntando al dominio de demo del theme).
 - **`npm run astro-check` / `npm run build`**: verificado limpio (0 errores) al agregar
   los servicios de empresa y el blog — volver a correrlo antes de cada deploy.
+
+## Traducción al inglés: cómo se hizo y qué revisar
+
+`scripts/translate_es_en.py` traduce con el modelo local (qwen) con validación de cifras,
+enlaces y restos de español; `scripts/fix_en_review.py` aplica las correcciones manuales.
+Los 5 artículos del blog se reescribieron a mano porque el modelo inventó un título y
+tradujo "Nuevo León" como "New Mexico". Si cambia el texto en español hay que actualizar
+también el inglés. La carpeta `design/` (artes sociales, portadas, orquestador de modelos)
+vive en la raíz, fuera de este repo.

@@ -187,7 +187,37 @@ export function generatePaths(): Array<{
  * @param {string} [prependValue] - Optional value without any slash (ex: "services") to prepend to the URL.
  * @returns {string} The localized URL.
  */
+// Páginas con una URL distinta en cada idioma (el resto comparte el mismo slug).
+const PATH_ALIASES: { es: string; en: string }[] = [
+  { es: "domotica-casas-inteligentes", en: "smart-home-monterrey" },
+];
+
+const applyPathAliases = (url: string, lang: string | undefined): string => {
+  const to = lang === "en" ? "en" : "es";
+  const from = to === "en" ? "es" : "en";
+  let out = url;
+  for (const alias of PATH_ALIASES) {
+    out = out.replace(
+      new RegExp(`/${alias[from]}(?=[/?#]|$)`),
+      `/${alias[to]}`,
+    );
+  }
+  return out;
+};
+
 export const getLocaleUrlCTM = (
+  url: string,
+  providedLang: string | undefined,
+  prependValue?: string,
+): string =>
+  url.startsWith("#")
+    ? url // anclas de la misma página: no se localizan
+    : applyPathAliases(
+        getLocaleUrlCore(url, providedLang, prependValue),
+        providedLang || defaultLanguage,
+      );
+
+const getLocaleUrlCore = (
   url: string,
   providedLang: string | undefined,
   prependValue?: string,

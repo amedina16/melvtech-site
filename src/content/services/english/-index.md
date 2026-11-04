@@ -1,6 +1,6 @@
 ---
-title: "Our Services"
-metaDescription: "Browse our IT services, including app development, cybersecurity, cloud, automation, and support."
+title: "Services"
+metaDescription: "Home automation, networks, alarms, video surveillance, monitoring, and business solutions in Monterrey and its metropolitan area."
 draft: false
 
 # Override Default Content of `/sections/services-section.md` showing in services list page

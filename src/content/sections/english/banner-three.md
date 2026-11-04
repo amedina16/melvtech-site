@@ -1,18 +1,18 @@
 ---
 enable: true
-title: "We provide best tech solutions for your business"
-description: "We are architects of innovation, trailblazers of technological advancement, and partners in your success. As a dynamic and forward-thinking organization"
+title: "Control and protect your property from wherever you are"
+description: "At MelvTech, we design and install home automation, networks, alarms, video surveillance, and monitoring – all integrated, regardless of your house or business size."
 mapImage: "/images/banner/map.svg"
 gradientBackgroundImage: "/images/banner/home-three-gradient-bg.svg"
 
 buttons:
   - enable: true
-    label: "Work With Us"
-    url: "/#contact"
+    label: "Get a quote"
+    url: "/contacto/"
     hoverEffect: "magnetic-text-flip"
     variant: "fill"
   - enable: true
-    label: "View Services"
+    label: "View services"
     url: "/services/"
     hoverEffect: "magnetic-text-flip"
     variant: "fill-white"

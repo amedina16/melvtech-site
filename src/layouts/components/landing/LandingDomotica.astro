@@ -1,0 +1,343 @@
+---
+// Cuerpo de la landing de domótica / smart home. Lo usan la página en español
+// (/domotica-casas-inteligentes/) y la de inglés (/en/smart-home-monterrey/).
+import Base from "@/layouts/Base.astro";
+import Button from "@/components/Button.astro";
+import DynamicIcon from "@/helpers/DynamicIcon.astro";
+import OptimizedImage from "@/components/utilities/OptimizedImage.astro";
+import { getLocaleUrlCTM } from "@/lib/utils/i18nUtils";
+
+const { data } = Astro.props;
+const {
+  meta,
+  hero,
+  whatIs,
+  controls,
+  compat,
+  process,
+  wifi,
+  security,
+  audience,
+  pricing,
+  faq,
+  sources,
+  trademark,
+  ui,
+  UPDATED_ISO,
+  UPDATED_LABEL,
+  buildSchema,
+} = data;
+
+const lang = Astro.currentLocale;
+const href = (url: string) =>
+  url.startsWith("/") ? getLocaleUrlCTM(url, lang) : url;
+const schema = JSON.stringify(buildSchema());
+const EMAIL = "atencion@melvtech.com";
+---
+
+<Base
+  title={meta.title}
+  metaDescription={meta.description}
+  image={meta.ogImage}
+  disableTagline={true}
+  fitToScreen={false}>
+  <script is:inline type="application/ld+json" set:html={schema} />
+
+  <!-- HERO -->
+  <section
+    class="page-header-gradient section-spacing-lg-vertical relative overflow-hidden"
+    aria-labelledby="h1-domotica">
+    <div class="relative z-10 container grid items-center gap-12 lg:grid-cols-2">
+      <div>
+        <nav aria-label={ui.breadcrumbAria} class="mb-6 text-sm">
+          <ol class="text-light flex flex-wrap items-center gap-2">
+            <li><a class="hover:text-white" href={href("/")}>{ui.home}</a></li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <a class="hover:text-white" href={href("/services/")}>{ui.services}</a>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li class="text-white" aria-current="page">{ui.pageName}</li>
+          </ol>
+        </nav>
+        <p class="text-light mb-4 text-base">{hero.eyebrow}</p>
+        <h1
+          id="h1-domotica"
+          class="text-display-6 sm:text-display-5 md:text-display-4 text-white">
+          {hero.h1}
+        </h1>
+        <p class="text-light mt-6 max-w-xl text-lg">{hero.sub}</p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <Button
+            url={hero.ctaPrimary.url}
+            label={hero.ctaPrimary.label}
+            variant="fill-white"
+            hoverEffect="magnetic-text-flip"
+          />
+          <Button
+            url={hero.ctaSecondary.url}
+            label={hero.ctaSecondary.label}
+            hoverEffect="magnetic-text-flip"
+            class="btn-black border border-white/40"
+          />
+        </div>
+        <p class="text-light mt-6 text-sm">{hero.note}</p>
+      </div>
+      <div class="mx-auto w-full max-w-sm lg:max-w-md">
+        <OptimizedImage
+          src="/images/services/domotica.webp"
+          alt={ui.heroAlt}
+          width={624}
+          height={780}
+          loading="eager"
+          class="aspect-4/5 w-full rounded-2xl object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section class="section-spacing-vertical" aria-labelledby="h2-que-es">
+    <div class="container max-w-4xl">
+      <h2 id="h2-que-es" class="text-h2-sm md:text-h2">{whatIs.h2}</h2>
+      <p class="mt-6 text-xl leading-relaxed text-dark">{whatIs.answer}</p>
+      {whatIs.more.map((p: string) => <p class="mt-5 text-lg">{p}</p>)}
+    </div>
+  </section>
+
+  <!-- QUÉ SE CONTROLA -->
+  <section
+    class="section-spacing-vertical bg-theme-light"
+    aria-labelledby="h2-controla">
+    <div class="container">
+      <h2 id="h2-controla" class="text-h2-sm md:text-h2 max-w-3xl">
+        {controls.h2}
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg">{controls.intro}</p>
+      <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          controls.items.map((item: any) => (
+            <li class="rounded-2xl bg-white p-8">
+              <span class="bg-primary/10 text-primary mb-5 flex size-14 items-center justify-center rounded-xl">
+                <DynamicIcon name={item.icon} class="size-7" />
+              </span>
+              <h3 class="text-h6">{item.title}</h3>
+              <p class="mt-3">{item.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-10 max-w-3xl text-lg">{controls.routines}</p>
+    </div>
+  </section>
+
+  <!-- COMPATIBILIDAD -->
+  <section class="section-spacing-vertical" aria-labelledby="h2-compat">
+    <div class="container max-w-4xl">
+      <h2 id="h2-compat" class="text-h2-sm md:text-h2">{compat.h2}</h2>
+      {
+        compat.paragraphs.map((p: string) => {
+          const parts = p.split(/(\[\d\])/);
+          return (
+            <p class="mt-6 text-lg">
+              {parts.map((part) => {
+                const m = part.match(/^\[(\d)\]$/);
+                if (!m) return part;
+                const src = sources.find((s: any) => s.id === Number(m[1]));
+                return (
+                  <sup>
+                    <a
+                      href={src?.url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={`${ui.sourceLabel} ${m[1]}: ${src?.label}`}>
+                      [{m[1]}]
+                    </a>
+                  </sup>
+                );
+              })}
+            </p>
+          );
+        })
+      }
+      <div class="mt-10 overflow-x-auto rounded-2xl border border-border-light">
+        <table class="w-full min-w-xl text-left text-base">
+          <thead class="bg-theme-light text-dark">
+            <tr>
+              {
+                compat.table.head.map((h: string) => (
+                  <th scope="col" class="px-5 py-4 font-semibold">
+                    {h}
+                  </th>
+                ))
+              }
+            </tr>
+          </thead>
+          <tbody>
+            {
+              compat.table.rows.map((row: string[]) => (
+                <tr class="border-t border-border-light align-top">
+                  {row.map((cell, i) =>
+                    i === 0 ? (
+                      <th scope="row" class="text-dark px-5 py-4 font-semibold">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td class="px-5 py-4">{cell}</td>
+                    ),
+                  )}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-6 text-lg">{compat.note}</p>
+      <p class="mt-2 text-sm">{compat.checked}</p>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section
+    id="proceso"
+    class="section-spacing-vertical bg-theme-light scroll-mt-28"
+    aria-labelledby="h2-proceso">
+    <div class="container">
+      <h2 id="h2-proceso" class="text-h2-sm md:text-h2 max-w-3xl">
+        {process.h2}
+      </h2>
+      <ol class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+        {
+          process.steps.map((s: any, i: number) => (
+            <li class="rounded-2xl bg-white p-6">
+              <span class="bg-primary flex size-10 items-center justify-center rounded-full text-base font-semibold text-white">
+                {i + 1}
+              </span>
+              <h3 class="text-h6 mt-5">{s.title}</h3>
+              <p class="mt-3 text-base">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- WI-FI + SEGURIDAD + PARA QUIÉN -->
+  <section class="section-spacing-vertical" aria-label={ui.midAria}>
+    <div class="container grid gap-8 lg:grid-cols-3">
+      <article class="rounded-2xl border border-border-light p-8">
+        <h2 class="text-h5-sm md:text-h5">{wifi.h2}</h2>
+        <p class="mt-4">{wifi.text}</p>
+        <a
+          class="text-primary mt-6 inline-block font-semibold hover:underline"
+          href={href(wifi.link.url)}>
+          {wifi.link.label}
+        </a>
+      </article>
+      <article class="rounded-2xl border border-border-light p-8">
+        <h2 class="text-h5-sm md:text-h5">{security.h2}</h2>
+        <p class="mt-4">{security.text}</p>
+        <ul class="mt-6 flex flex-col gap-2">
+          {
+            security.links.map((l: any) => (
+              <li>
+                <a
+                  class="text-primary font-semibold hover:underline"
+                  href={href(l.url)}>
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-border-light p-8">
+        <h2 class="text-h5-sm md:text-h5">{audience.h2}</h2>
+        <p class="mt-4">{audience.text}</p>
+        <a
+          class="text-primary mt-6 inline-block font-semibold hover:underline"
+          href={href(audience.link.url)}>
+          {audience.link.label}
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRECIO -->
+  <section
+    class="section-spacing-vertical bg-theme-dark text-white"
+    aria-labelledby="h2-precio">
+    <div class="container max-w-4xl text-center">
+      <h2 id="h2-precio" class="text-h2-sm md:text-h2 text-white">
+        {pricing.h2}
+      </h2>
+      <p class="text-light mx-auto mt-6 max-w-3xl text-lg">{pricing.text}</p>
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <Button
+          url="/contacto/"
+          label={ui.quoteCta}
+          variant="fill"
+          hoverEffect="magnetic-text-flip"
+        />
+        <a class="text-light font-semibold hover:text-white" href={href(pricing.link.url)}>
+          {pricing.link.label}
+        </a>
+      </div>
+      <p class="text-light mt-6 text-sm">
+        {ui.orWrite}
+        <a class="underline hover:text-white" href={`mailto:${EMAIL}`}>{EMAIL}</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-spacing-vertical" aria-labelledby="h2-faq">
+    <div class="container max-w-4xl">
+      <h2 id="h2-faq" class="text-h2-sm md:text-h2">{ui.faqH2}</h2>
+      <div class="mt-10 divide-y divide-border-light rounded-2xl border border-border-light">
+        {
+          faq.map((f: any, i: number) => (
+            <details class="group p-6" open={i === 0}>
+              <summary class="text-dark flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">
+                <span>{f.q}</span>
+                <span
+                  aria-hidden="true"
+                  class="text-primary text-2xl transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p class="mt-4 text-base">{f.a}</p>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- FUENTES -->
+  <section class="pb-16" aria-labelledby="h2-fuentes">
+    <div class="container max-w-4xl">
+      <h2 id="h2-fuentes" class="text-h6">{ui.sourcesH2}</h2>
+      <ol class="mt-4 list-decimal space-y-1 ps-5 text-sm">
+        {
+          sources.map((s: any) => (
+            <li>
+              <a
+                class="text-primary hover:underline"
+                href={s.url}
+                rel="noopener noreferrer"
+                target="_blank">
+                {s.label}
+              </a>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="mt-4 text-sm">
+        {ui.madeBy}
+        <time datetime={UPDATED_ISO}>{UPDATED_LABEL}</time>.
+      </p>
+      <p class="mt-2 text-sm">{trademark}</p>
+    </div>
+  </section>
+</Base>

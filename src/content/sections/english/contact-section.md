@@ -1,20 +1,20 @@
 ---
 enable: true # Control the visibility of this section across all pages where it is used
-title: "Have Any Project on Your Mind?"
-description: "Great! We're excited to hear from you and let's start something"
-officeHours: "Office Hours: Mon - Sat: 8:00 AM - 10:00 PM" # Optional; remove or set empty to hide this row.
+title: "Do you have a project in mind?"
+description: "Great! We love hearing from you, let's get started together"
+officeHours: "" # Optional; remove or set empty to hide this row.
 
 # Check config.toml file for form action related settings
 # this is also used in the footer of the personal portfolio homepage
-formTitle: "Fill The Contact Form"
-formDescription: "Tell us what you need and our team will reply with useful next steps."
+formTitle: "Fill out the contact form"
+formDescription: "Tell us what you need and our team will respond with the following steps."
 
 form:
-  emailSubject: "New form submission from your website" # Customized email subject (applicable when anyone submit form, form submission may receive by email depend on provider)
+  emailSubject: "New contact request from your website" # Customized email subject (applicable when anyone submit form, form submission may receive by email depend on provider)
   submitButton:
     # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
     enable: true
-    label: "Send Message"
+    label: "Send message"
     class: "w-full justify-center rounded-md"
     hoverEffect: "magnetic-text-flip" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
     # variant: "" # Optional: fill | outline | text | circle
@@ -30,9 +30,9 @@ form:
       placeholder: "Your name"
       required: true
       halfWidth: true
-    - label: "Email address"
+    - label: "Email"
       name: "Email"
-      placeholder: "Email address"
+      placeholder: "Email"
       type: "email"
       required: true
       halfWidth: true
@@ -41,39 +41,39 @@ form:
       placeholder: "Estimated budget"
       type: "number"
       halfWidth: true
-    - label: "Preferred start date"
+    - label: "Desired start date"
       name: "Start Date"
-      placeholder: "Preferred start date"
+      placeholder: "Desired start date"
       type: "date"
       halfWidth: true
-    - label: "Service interest"
+    - label: "Service you are interested in"
       name: "Service"
       placeholder: "Select a service"
       required: true
       dropdown:
         type: "search"
         search:
-          placeholder: "Search service"
+          placeholder: "Search for a service"
         items:
-          - label: "Web & Mobile App Development"
-            value: "Web & Mobile App Development"
-          - label: "Cloud Infrastructure"
-            value: "Cloud Infrastructure"
-          - label: "Cybersecurity Review"
-            value: "Cybersecurity Review"
-          - label: "Data Tracking & Analytics"
-            value: "Data Tracking & Analytics"
-          - label: "Automation Workflow"
-            value: "Automation Workflow"
-    - label: "New project"
+          - label: "home automation"
+            value: "Domótica"
+          - label: "Mesh Wi-Fi Networks"
+            value: "Redes y WiFi Mesh"
+          - label: "Alarms"
+            value: "Alarmas"
+          - label: "Video surveillance"
+            value: "Videovigilancia"
+          - label: "Camera Monitoring"
+            value: "Monitoreo de Cámaras"
+    - label: "New Project"
       name: "Project Type"
       value: "New project"
       type: "radio"
       group: "Project Type"
-      groupLabel: "Project type"
+      groupLabel: "Project Type"
       checked: true
       halfWidth: true
-    - label: "Improve existing system"
+    - label: "Improve an existing system"
       name: "Project Type"
       value: "Improve existing system"
       type: "radio"
@@ -84,7 +84,7 @@ form:
       value: "Email"
       type: "checkbox"
       group: "Preferred Contact"
-      groupLabel: "Preferred contact method"
+      groupLabel: "Preferred method of contact"
       checked: true
       halfWidth: true
     - label: "Phone"
@@ -99,15 +99,15 @@ form:
       tag: "textarea"
       rows: "5"
       required: true
-    - label: "I agree to be contacted about this request."
+    - label: "I accept being contacted about this request."
       name: "Consent"
       value: true
       type: "checkbox"
       required: true
     - note: success
       parentClass: "hidden text-sm message success"
-      content: "Thank you. We received your request and will reply with useful next steps."
+      content: "Thank you. We have received your request and will respond with the following steps."
     - note: deprecated
       parentClass: "hidden text-sm message error"
-      content: "Something went wrong. Please try again or contact us directly."
+      content: "An error occurred. Try again or contact us directly."
 ---

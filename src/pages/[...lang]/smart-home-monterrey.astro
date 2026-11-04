@@ -1,0 +1,12 @@
+---
+import LandingDomotica from "@/layouts/components/landing/LandingDomotica.astro";
+import { generatePaths } from "@/lib/utils/i18nUtils.ts";
+import * as data from "../../data/landing-domotica.en";
+
+// Inglés: /en/smart-home-monterrey/ (par de /domotica-casas-inteligentes/).
+export function getStaticPaths() {
+  return generatePaths().filter((p) => p.params.lang === "en");
+}
+---
+
+<LandingDomotica data={data} />

@@ -7,19 +7,18 @@ images:
   small: "/images/skill/skill-2.jpg"
 
 title: |
-  We provide perfect IT solutions & technology
+  Complete solutions for your home or business
 subtitle: |
-  Our team helps startups move from idea to launch with reliable systems, clear priorities, and practical technical support.
+  We help you choose exactly what you need, without extra equipment or complicated installations.
 description: |
-  We plan, design, build, and optimize digital products that are easy for teams to manage and ready for future growth.
-
+  We design, install, and provide support for home automation systems, networks, alarms, video surveillance, and monitoring, tailored to the actual size of your property.
 # EXTRATYPE OPTIONS: "skills" | "list-x" | "list-y" | "stats" | "none"
 extraType: "list-x"
 
 # SHARED BUTTON CONFIGURATION (Applies to all section buttons)
 buttons:
   - enable: false # Boolean: true | false
-    label: "Explore Our Services"
+    label: "Discover our services"
     url: "/services/"
     tag: "a" # Enum: a | button
     variant: "fill" # Enum: fill | fill-white | outline | text | circle
@@ -33,8 +32,8 @@ buttons:
     class: "" # String: Additional button Tailwind classes
 
 listItems:
-  - title: "Provide Skills<br />Services"
+  - title: "Professional installation"
     icon: "Settings"
-  - title: "Urgent Support<br />For Clients"
+  - title: "Support<br />when you need it"
     icon: "Headphones"
 ---

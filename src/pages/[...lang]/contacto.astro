@@ -7,12 +7,15 @@ import { generatePaths } from "@/lib/utils/i18nUtils.ts";
 export function getStaticPaths() {
   return generatePaths();
 }
+
+const en = Astro.currentLocale === "en";
+const title = en ? "Contact" : "Contacto";
+const description = en
+  ? "Get a quote for your home automation, networks, alarms, video surveillance, monitoring or business project in Monterrey and its metropolitan area."
+  : "Cotiza tu proyecto de domótica, redes, alarmas, videovigilancia, monitoreo o soluciones para tu negocio en Monterrey y su área metropolitana.";
 ---
 
-<Base
-  title="Contacto"
-  metaDescription="Cotiza tu proyecto de domótica, redes, alarmas, videovigilancia, monitoreo o soluciones para tu negocio en Monterrey y su área metropolitana."
-  fitToScreen={false}>
-  <PageHeader content={{ title: "Contacto" }} />
+<Base title={title} metaDescription={description} fitToScreen={false}>
+  <PageHeader content={{ title }} />
   <ContactSectionTwo />
 </Base>

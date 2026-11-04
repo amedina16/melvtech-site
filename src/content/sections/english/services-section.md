@@ -1,11 +1,11 @@
 ---
 enable: true
-title: "Our awesome services to <br/> give you success"
+title: "Our services<br/> for your peace of mind"
 
 button:
   # Refer to the `sharedButton` schema in `src/sections.schema.ts` for all available configuration options (e.g., enable, label, url, hoverEffect, variant, icon, tag, rel, class, target, etc.)
   enable: true
-  label: "View all services"
+  label: "See all services"
   url: "/services/"
   hoverEffect: "magnetic-text-flip" # Optional: text-flip | creative-fill | magnetic | magnetic-text-flip
   variant: "fill" # Optional: fill | fill-white | outline | text | circle
@@ -19,7 +19,7 @@ button:
 
 options:
   layout: "carousel" # grid | carousel; carousel uses each service image as an overlay card background
-  limit: 6
+  limit: 5
   marquee: # Used when layout is "carousel"
     elementWidthAuto: false
     elementWidth: "22rem"

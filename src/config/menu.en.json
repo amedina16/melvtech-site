@@ -13,131 +13,165 @@
       "children": [
         {
           "enable": true,
-          "name": "All Services",
+          "name": "All services",
           "url": "/services/"
         },
         {
           "enable": true,
-          "name": "Web & Mobile App Development",
-          "url": "/services/service-02/"
+          "name": "Home automation and smart homes",
+          "url": "/domotica-casas-inteligentes/"
         },
         {
           "enable": true,
-          "name": "UI/UX & Branding Identity",
-          "url": "/services/service-05/"
+          "name": "Networks and mesh Wi-Fi",
+          "url": "/services/redes-wifi/"
         },
         {
           "enable": true,
-          "name": "Digital Marketing",
-          "url": "/services/service-03/"
+          "name": "Alarms",
+          "url": "/services/alarmas/"
         },
         {
           "enable": true,
-          "name": "Cyber Security Solutions",
-          "url": "/services/service-06/"
+          "name": "Video surveillance",
+          "url": "/services/videovigilancia/"
         },
         {
           "enable": true,
-          "name": "Cloud Migration & DevOps",
-          "url": "/services/service-07/"
+          "name": "Camera monitoring",
+          "url": "/services/monitoreo/"
+        },
+        {
+          "enable": true,
+          "name": "Access control",
+          "url": "/services/control-accesos/"
+        },
+        {
+          "enable": true,
+          "name": "Structured cabling",
+          "url": "/services/cableado-estructurado/"
+        },
+        {
+          "enable": true,
+          "name": "Network infrastructure",
+          "url": "/services/infraestructura-redes/"
+        },
+        {
+          "enable": true,
+          "name": "Server administration",
+          "url": "/services/administrador-servidores/"
+        },
+        {
+          "enable": true,
+          "name": "Technical support plans",
+          "url": "/services/polizas-soporte-tecnico/"
         }
       ]
     },
     {
       "enable": true,
-      "name": "Blog",
-      "url": "/blog/"
+      "name": "Business",
+      "url": "/empresas/"
     },
     {
       "enable": true,
-      "name": "Team",
-      "url": "/team/"
+      "name": "Pricing",
+      "url": "/precios/"
+    },
+    {
+      "enable": true,
+      "name": "About us",
+      "url": "/nosotros/"
+    },
+    {
+      "enable": true,
+      "name": "Contact",
+      "url": "/contacto/"
     }
   ],
   "footer": [
     {
-      "label": "Quick Links",
+      "label": "Home",
       "list": [
         {
           "enable": true,
-          "name": "Our Team",
-          "url": "/team/",
-          "active": true
+          "name": "Home automation and smart homes",
+          "url": "/domotica-casas-inteligentes/"
         },
         {
           "enable": true,
-          "name": "Blogs",
+          "name": "Networks and mesh Wi-Fi",
+          "url": "/services/redes-wifi/"
+        },
+        {
+          "enable": true,
+          "name": "Alarms",
+          "url": "/services/alarmas/"
+        },
+        {
+          "enable": true,
+          "name": "Video surveillance",
+          "url": "/services/videovigilancia/"
+        },
+        {
+          "enable": true,
+          "name": "Camera monitoring",
+          "url": "/services/monitoreo/"
+        }
+      ]
+    },
+    {
+      "label": "Business",
+      "list": [
+        {
+          "enable": true,
+          "name": "Access control",
+          "url": "/services/control-accesos/"
+        },
+        {
+          "enable": true,
+          "name": "Structured cabling",
+          "url": "/services/cableado-estructurado/"
+        },
+        {
+          "enable": true,
+          "name": "Network infrastructure",
+          "url": "/services/infraestructura-redes/"
+        },
+        {
+          "enable": true,
+          "name": "Server administration",
+          "url": "/services/administrador-servidores/"
+        },
+        {
+          "enable": true,
+          "name": "Technical support plans",
+          "url": "/services/polizas-soporte-tecnico/"
+        }
+      ]
+    },
+    {
+      "label": "MelvTech",
+      "list": [
+        {
+          "enable": true,
+          "name": "About us",
+          "url": "/nosotros/"
+        },
+        {
+          "enable": true,
+          "name": "Pricing",
+          "url": "/precios/"
+        },
+        {
+          "enable": true,
+          "name": "Blog",
           "url": "/blog/"
-        },
-        {
-          "enable": true,
-          "name": "About Us",
-          "url": "#"
-        },
-        {
-          "enable": true,
-          "name": "Careers",
-          "url": "#"
         },
         {
           "enable": true,
           "name": "Contact",
-          "url": "#"
-        }
-      ]
-    },
-    {
-      "label": "Services",
-      "list": [
-        {
-          "enable": true,
-          "name": "UI/UX Design",
-          "url": "/services/service-05/"
-        },
-        {
-          "enable": true,
-          "name": "App Development",
-          "url": "/services/service-02/"
-        },
-        {
-          "enable": true,
-          "name": "Digital Marketing",
-          "url": "/services/service-03/"
-        },
-        {
-          "enable": true,
-          "name": "Web Development",
-          "url": "/services/service-02/"
-        },
-        {
-          "enable": true,
-          "name": "Cyber Security",
-          "url": "/services/service-06/"
-        }
-      ]
-    },
-    {
-      "label": "Company",
-      "list": [
-        {
-          "enable": true,
-          "name": "All Services",
-          "url": "/services/"
-        },
-        {
-          "enable": true,
-          "name": "Latest Posts",
-          "url": "/blog/"
-        },
-        {
-          "enable": true,
-          "name": "Terms & Conditions",
-          "url": "/terms-conditions/"
-        },
-        {
-          "enable": true,
-          "name": "Privacy Policy",
-          "url": "/privacy-policy/"
+          "url": "/contacto/"
         }
       ]
     }

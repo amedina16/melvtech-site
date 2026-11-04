@@ -1,5 +1,7 @@
 ---
 title: ""
-metaDescription: "Build reliable technology with We through expert IT strategy, software engineering, and support."
+metaTitle: "MelvTech | Home Automation, Security and Networks in Monterrey"
+disableTagline: true
+metaDescription: "Home automation, networks, alarms, video surveillance, and monitoring for your home or business in Monterrey and its metropolitan area."
 hasFooterDarkBackground: true
 ---

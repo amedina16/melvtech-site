@@ -1,15 +1,15 @@
 ---
 enable: true
-title: "Our working process on how<br />to grow your business"
+title: "Our process for<br />protecting your property"
 # Images should remain lightweight transparent illustrations for the process step layout.
 list:
-  - title: "Initiation & Planning"
-    description: "We clarify goals, risks, users, timelines, and the technical path forward."
+  - title: "Diagnosis and Planning"
+    description: "We review your property, your needs, and define what to install and how."
     image: "/images/process/step-01.png"
-  - title: "Execution & Development"
-    description: "We design, build, integrate, and review each milestone with your team."
+  - title: "Installation and Configuration"
+    description: "We install, configure, and integrate each system, and we check with you that everything works."
     image: "/images/process/step-02.png"
-  - title: "Testing & Maintenance"
-    description: "We validate performance, fix issues, document systems, and support launch."
+  - title: "Support and Maintenance"
+    description: "We follow up, resolve issues, and document everything for easy use."
     image: "/images/process/step-03.png"
 ---

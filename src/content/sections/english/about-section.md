@@ -7,19 +7,18 @@ images:
   small: "/images/about-us/about-1-b.jpg"
 
 title: |
-  More than 25+ years we provide IT solutions
+  Experts in video surveillance, now for your connected home
 subtitle: |
-  During this time, we have built a reputation for dependable delivery, practical guidance, and long-term client support.
+  We started as experts in security cameras and over time expanded our knowledge to include home automation, networks, and alarms, offering you a complete solution.
 description: |
-  We help organizations modernize technology with clear planning, focused delivery, and maintainable systems.
-
+  We help families and businesses in Monterrey and its metropolitan area improve their security and connectivity with clear installations, close support, and easy-to-use systems.
 # EXTRATYPE OPTIONS: "skills" | "list-x" | "list-y" | "stats" | "none"
 extraType: "none"
 
 # SHARED BUTTON CONFIGURATION (Applies to all section buttons)
 buttons:
   - enable: true # Boolean: true | false
-    label: "Explore Our Services"
+    label: "Discover our services"
     url: "/services/"
     tag: "a" # Enum: a | button
     variant: "fill" # Enum: fill | fill-white | outline | text | circle
