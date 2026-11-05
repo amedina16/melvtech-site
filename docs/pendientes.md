@@ -18,8 +18,8 @@ Abiertos:
   Pendiente opcional: slugs en inglés para el resto (`/en/contacto/`, `/en/precios/`,
   `/en/services/alarmas/`...) con el mismo mecanismo de alias.
 - ~~**Testimonios y equipo demo**~~ Testimonios ocultos en ambos idiomas
-  (`enable: false`); `/team/` fuera del sitemap. Siguen existiendo las páginas `/team/` y el
-  contenido demo en `src/content/team/`: borrarlas o marcarlas `noindex` antes de publicar.
+  (`enable: false`); páginas `/team/` y su contenido demo eliminados (colección, rutas y
+  componentes `Team*`).
 - **Aviso de Privacidad (ES y EN)** (LFPDPPP; el formulario recolecta datos personales).
   Privacidad y Términos siguen en francés. Requiere razón social y domicilio fiscal;
   revisión legal recomendada.
@@ -114,7 +114,6 @@ genérico) hasta tener contenido real de MelvTech:
 
 - **Testimonios** (`src/content/sections/spanish/testimonial.md`) — citas y nombres
   falsos del theme.
-- **Equipo** (`src/content/team/spanish/`) — perfiles de demo (Daniyel Karlos, etc.).
 
 ## Contenido de empresas — falta profundizar
 

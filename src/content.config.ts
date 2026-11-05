@@ -79,28 +79,6 @@ const blogCollection = defineCollection({
   }),
 });
 
-// Team Collection
-export const teamCollection = defineCollection({
-  // Load Markdown and MDX files in the `src/content/team` directory.
-  loader: contentLoader("./src/content/team"),
-  schema: page.extend({
-    image: z.string().optional(),
-    profession: z.string().optional(),
-    email: z.string().optional(),
-    phone: z.string().optional(),
-    social: z
-      .array(
-        z.object({
-          enable: z.boolean(),
-          label: z.string(),
-          icon: z.string(),
-          url: z.string(),
-        }),
-      )
-      .optional(),
-  }),
-});
-
 // Export collections
 export const collections = {
   // To prevent, getEntry (Content fetching API) throws error when collection does not exist, we specify a default collection along with the schema of each required collection
@@ -118,7 +96,6 @@ export const collections = {
     loader: contentLoader("./src/content/homepage"),
     schema: page,
   }),
-  team: teamCollection,
   author: defineCollection({
     loader: contentLoader("./src/content/author"),
   }),
