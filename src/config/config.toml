@@ -6,10 +6,10 @@
   taglineSeparator = " | " # default is " - "
   baseUrl          = "https://melvtech.com/" # Base URL for the site and used in OpenGraph meta tags.
   logo             = "/images/logo.svg" # Path to the site's logo
-  logoAlternate    = "" # Path to the site's logo
-  logoText         = "MelvTech" # Text displayed next to the logo
-  logoWidth        = "24px" # Width of the logo
-  logoHeight       = "36px" # Height of the logo
+  logoAlternate    = "/images/logo-oscuro.svg" # Logo para fondos oscuros (texto blanco)
+  logoText         = "" # El texto "MelvTech" ya va dentro del logo
+  logoWidth        = "158px" # Width of the logo
+  logoHeight       = "44px" # Height of the logo
 
   # Add a trailing slash at the end of URLs (e.g., https://example.com/, https://example.com/contact/)˝
   # Note: Manually restart your server when you change this value

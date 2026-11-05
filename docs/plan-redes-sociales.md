@@ -55,7 +55,7 @@ para texto, 400 para fuentes y notas al pie. No mezclar otra tipografía.
 ### Logo
 
 - Rayo azul `#2B4DFF` + "MelvTech" en blanco sobre fondo oscuro, o en azul oscuro sobre claro.
-- Foto de perfil: el rayo azul sobre fondo blanco (`public/images/logo-512.png`, ya existe).
+- Foto de perfil: el escudo con rayo sobre fondo blanco (`public/images/logo-512.png`, ya actualizado; versión oscura en `design/logo/escudo/logo-solo-fondo-oscuro.png`).
   Se recorta en círculo, así que el rayo va centrado.
 - Espacio libre alrededor: como mínimo la altura del rayo.
 

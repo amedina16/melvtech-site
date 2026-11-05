@@ -259,7 +259,7 @@ header.has-dark-background .navbar .badge {
   @apply flex items-center gap-2;
 
   .logo {
-    @apply flex items-center gap-x-4;
+    @apply flex shrink-0 items-center gap-x-4;
   }
 
   .logo-text {
@@ -309,6 +309,11 @@ footer {
 
   &.footer-dark {
     @apply bg-theme-dark text-light;
+
+    /* Con fondo oscuro se muestra solo el logo para fondos oscuros */
+    .logo {
+      @apply hidden;
+    }
 
     .logo-alternate {
       @apply inline-block!;
