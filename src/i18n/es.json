@@ -1,4 +1,8 @@
 {
+  "whatsapp": {
+    "label": "Escríbenos por WhatsApp",
+    "message": "Hola, me gustaría cotizar un servicio con MelvTech."
+  },
   "common": {
     "readMore": "Leer más",
     "readBlog": "Leer artículo",

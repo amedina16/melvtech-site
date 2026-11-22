@@ -7,6 +7,7 @@ import Header from "@/components/global/header/Header.astro";
 import type { JSONLDProps } from "@/lib/utils/JsonLdGenerator";
 import CursorFollower from "@/components/utilities/CursorFollower.astro";
 import BackToTop from "@/components/utilities/BackToTop.astro";
+import WhatsAppButton from "@/components/widgets/WhatsAppButton.astro";
 import BreakpointIndicator from "@/components/widgets/BreakpointIndicator.astro";
 import GlobalScripts from "./components/widgets/GlobalScripts.astro";
 import type { HeaderLayout } from "@/types";
@@ -81,6 +82,7 @@ className = fitToScreen
     <GlobalScripts />
     <CursorFollower />
     <BackToTop />
+    <WhatsAppButton />
     <BreakpointIndicator />
   </body>
 </html>

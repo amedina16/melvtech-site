@@ -120,7 +120,8 @@
 
   # Global Contact Information
   [settings.contactInfo]
-    phone       = "" # pendiente de confirmar; vacío = no se muestra
+    phone       = "[81 4076 7160](tel:+528140767160)"
+    whatsapp    = "528140767160" # solo dígitos con lada de país (México = 52); vacío = no se muestra el botón
     email       = "[atencion@melvtech.com](mailto:atencion@melvtech.com)"
     address     = "" # pendiente; vacío = no se muestra
     officeHours = "" # pendiente de confirmar horario real; vacío = no se muestra

@@ -243,11 +243,13 @@ export function buildSchema() {
     url: SITE + "/",
     logo: SITE + "/images/logo-512.png",
     email: "atencion@melvtech.com",
+    telephone: "+52 81 4076 7160",
     areaServed: { "@type": "AdministrativeArea", name: "Área metropolitana de Monterrey, Nuevo León, México" },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
       email: "atencion@melvtech.com",
+      telephone: "+52 81 4076 7160",
       availableLanguage: "es",
     },
   };

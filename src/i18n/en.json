@@ -1,4 +1,8 @@
 {
+  "whatsapp": {
+    "label": "Message us on WhatsApp",
+    "message": "Hello, I would like a quote for a MelvTech service."
+  },
   "common": {
     "readMore": "Read More",
     "readBlog": "Read Blog",

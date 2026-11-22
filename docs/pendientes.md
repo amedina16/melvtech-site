@@ -26,8 +26,8 @@ Abiertos:
 - **FormSubmit**: tras publicar, enviar un mensaje de prueba por `/contacto/` y activar
   el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
 - **Hosting: Dokploy.** `Dockerfile`, `deploy/` y guía en `docs/despliegue-dokploy.md`. Imagen probada en
-  local el 2026-11-04 (build, healthcheck, redirecciones, gzip, caché, 404). Falta crear la
-  aplicación en Dokploy y conectar el dominio.
+  local el 2026-11-04 (build, healthcheck, redirecciones, gzip, caché, 404). El sitio ya
+  está publicado en `https://melvtech.com/` (verificado 2026-11-21, detrás de Cloudflare).
 
 ## Landing "Domótica y casas inteligentes" (2026-11-03)
 
@@ -59,10 +59,21 @@ existe. Se resuelve al apagar el inglés (bloqueador #1 de arriba).
 ## Datos de contacto
 
 - Email: `atencion@melvtech.com` (listo).
-- Teléfono, dirección y horario: **pendientes de confirmar**. En `config.toml`
-  (`settings.contactInfo`) están vacíos y el sitio los omite automáticamente; al
+- Teléfono / WhatsApp: `81 4076 7160` (listo, 2026-11-06). Está en `config.toml`
+  (`settings.contactInfo.phone` y `whatsapp`), en el schema de la landing y en el botón
+  flotante de WhatsApp (`WhatsAppButton.astro`).
+- Dirección y horario: **pendientes de confirmar**. En `config.toml`
+  (`settings.contactInfo.address`) están vacíos y el sitio los omite automáticamente; al
   llenarlos reaparecen en topbar, footer y menú lateral. El horario del theme era
   inventado y se eliminó.
+- Razón social: el sitio factura **Roots**; MelvTech es solo el nombre comercial. Faltan
+  razón social completa y domicilio fiscal de Roots para el Aviso de Privacidad y Términos.
+
+## Imagen para compartir (Open Graph)
+
+`public/images/og-image.jpg` era la captura del template; se reemplazó (2026-11-21) por una
+imagen de marca generada con `design/blog/make_og_site.py` (escudo + descripción del
+sitio). Las landings y artículos usan su propia imagen.
 
 ## Imágenes pendientes
 
