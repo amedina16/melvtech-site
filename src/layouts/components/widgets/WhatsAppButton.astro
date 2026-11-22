@@ -1,16 +1,12 @@
 ---
-import { useTranslations } from "@/lib/utils/i18nUtils.ts";
-import config from ".astro/config.generated.json";
+import {
+  getWhatsApp,
+  showFloatingWhatsApp,
+} from "@/lib/utils/whatsapp.ts";
 
-const t = await useTranslations(Astro.currentLocale as string);
-const number = String(config.settings.contactInfo.whatsapp || "").replace(
-  /\D/g,
-  "",
-);
-const label = t("whatsapp.label");
-const url = number
-  ? `https://wa.me/${number}?text=${encodeURIComponent(t("whatsapp.message"))}`
-  : "";
+const { url, label } = showFloatingWhatsApp(Astro.url.pathname)
+  ? await getWhatsApp(Astro.currentLocale as string)
+  : { url: "", label: "" };
 ---
 
 {
