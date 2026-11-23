@@ -13,6 +13,7 @@ import ImageItem from "@/shortcodes/ImageItem.astro";
 import Card from "@/shortcodes/Card.astro";
 import CardWrapper from "@/shortcodes/CardWrapper.astro";
 import VideoInline from "@/shortcodes/VideoInline.astro";
+import YouTubeEmbed from "@/shortcodes/YouTubeEmbed.astro";
 
 export const shortcodes = {
   Button,
@@ -27,4 +28,5 @@ export const shortcodes = {
   Card,
   CardWrapper,
   VideoInline,
+  YouTubeEmbed,
 };

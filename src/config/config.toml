@@ -66,6 +66,9 @@
   # formspree | formsubmit.co | netlify (default is formsubmit.co)
   contactFormProvider = "formsubmit.co"
 
+  # Meta Pixel (Facebook/Instagram Ads). Solo dígitos; vacío = no se carga. Solo se activa en producción.
+  metaPixelId = "1612424540685150"
+
   footerDescription = "" # Check src/i18n/en.json and src/i18n/fr.json for changing the footer description in different languages or directly add value here if you are not using internationalization feature
 
   # Smooth scroll behavior powered by Lenis

@@ -2,6 +2,7 @@
 import RecursiveToc from "@/layouts/components/widgets/RecursiveToc.astro";
 import Icons from "@/helpers/Icons.astro";
 import type { MarkdownHeading } from "astro";
+import { useTranslations } from "@/lib/utils/i18nUtils.ts";
 
 type CustomHeading = MarkdownHeading & {
   subheadings?: CustomHeading[];
@@ -16,6 +17,7 @@ import config from ".astro/config.generated.json";
 const { tableOfContents } = config.settings.markup;
 
 const { toc, className, marker = true, ...rest } = Astro.props;
+const t = await useTranslations(Astro.currentLocale as string);
 if (!toc) return;
 ---
 
@@ -32,7 +34,7 @@ if (!toc) return;
     aria-controls="toc-collapse">
     <span
       class="text-base-sm font-primary font-normal tracking-widest uppercase md:text-base">
-      Table of Contents
+      {t("blog.tableOfContents")}
     </span>
     <span
       class="hs-accordion-active:rotate-180 flex h-9 w-9 items-center justify-center rounded-full transition duration-300">

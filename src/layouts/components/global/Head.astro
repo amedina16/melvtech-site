@@ -3,6 +3,7 @@ import SEO from "@/components/seo/Seo.astro";
 import OpenGraph from "@/components/seo/OpenGraph.astro";
 import Favicons from "@/components/seo/Favicons.astro";
 import JsonLD from "../widgets/JsonLD.astro";
+import MetaPixel from "./MetaPixel.astro";
 import fontsJson from "@/config/fonts.json";
 import { Font } from "astro:assets";
 import config from ".astro/config.generated.json";
@@ -31,6 +32,7 @@ const fontVariables = fontsJson.map((font) => font.cssVariable) as any[];
   />
   <meta name="generator" content={Astro.generator} />
   {config.head?.content && <Fragment set:html={config.head?.content} />}
+  <MetaPixel />
   <OpenGraph {...Astro.props} />
   <Favicons />
   <JsonLD

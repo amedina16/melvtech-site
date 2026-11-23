@@ -1,0 +1,87 @@
+---
+// Video de YouTube con portada propia: no se contacta a YouTube hasta que la
+// persona presiona play (youtube-nocookie, sin cookies al cargar la página).
+// Incluye el esquema VideoObject. Uso en MDX:
+//   <YouTubeEmbed id="..." title="..." description="..." poster="/images/blog/x.webp"
+//                 uploadDate="2026-11-20" duration="PT1M58S" />
+import config from ".astro/config.generated.json";
+
+type Props = {
+  id: string;
+  title: string;
+  description?: string;
+  poster: string; // ruta en /public (imagen propia, sin pedir la miniatura a YouTube)
+  uploadDate: string; // ISO 8601
+  duration?: string; // ISO 8601, ej. PT1M58S
+};
+
+const { id, title, description, poster, uploadDate, duration } = Astro.props;
+const en = Astro.currentLocale === "en";
+const playLabel = en ? `Play video: ${title}` : `Reproducir video: ${title}`;
+const watchUrl = `https://www.youtube.com/watch?v=${id}`;
+const baseUrl = String(config.site.baseUrl || "").replace(/\/$/, "");
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: title,
+  description: description || title,
+  thumbnailUrl: `${baseUrl}${poster}`,
+  uploadDate,
+  ...(duration ? { duration } : {}),
+  embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
+  contentUrl: watchUrl,
+};
+---
+
+<figure class="youtube-embed my-8">
+  <div
+    class="relative aspect-video overflow-hidden rounded-xl bg-black"
+    data-youtube-id={id}
+    data-youtube-title={title}>
+    <button
+      type="button"
+      class="youtube-embed-play group absolute inset-0 size-full cursor-pointer"
+      aria-label={playLabel}>
+      <img
+        src={poster}
+        alt=""
+        width="1200"
+        height="675"
+        loading="lazy"
+        decoding="async"
+        class="size-full object-cover opacity-80 transition-opacity duration-300 group-hover:opacity-100"
+      />
+      <span class="absolute inset-0 flex items-center justify-center">
+        <span
+          class="bg-primary flex size-20 items-center justify-center rounded-full text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
+          <svg viewBox="0 0 24 24" class="ml-1 size-9" fill="currentColor" aria-hidden="true">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </span>
+      </span>
+    </button>
+  </div>
+  <noscript>
+    <p><a href={watchUrl} target="_blank" rel="noopener noreferrer">{en ? "Watch on YouTube" : "Ver en YouTube"}</a></p>
+  </noscript>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
+</figure>
+
+<script>
+  document.addEventListener("click", (event) => {
+    const button = (event.target as HTMLElement).closest<HTMLButtonElement>(
+      ".youtube-embed-play",
+    );
+    if (!button) return;
+    const box = button.parentElement as HTMLElement;
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube-nocookie.com/embed/${box.dataset.youtubeId}?rel=0&playsinline=1&autoplay=1`;
+    iframe.title = box.dataset.youtubeTitle || "";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.className = "absolute inset-0 size-full";
+    box.replaceChildren(iframe);
+  });
+</script>

@@ -69,6 +69,19 @@ existe. Se resuelve al apagar el inglés (bloqueador #1 de arriba).
 - Razón social: el sitio factura **Roots**; MelvTech es solo el nombre comercial. Faltan
   razón social completa y domicilio fiscal de Roots para el Aviso de Privacidad y Términos.
 
+## Meta Pixel y anuncios (2026-11-24)
+
+- Pixel `1612424540685150` en todo el sitio (`MetaPixel.astro`, ID en `config.toml` →
+  `settings.metaPixelId`; solo se carga en producción). Eventos: `PageView` y `Contact` al
+  hacer clic en cualquier enlace a WhatsApp.
+- Falta el evento del formulario: FormSubmit redirige fuera del sitio, hace falta una
+  página de "gracias" propia para medirlo bien.
+- Verificar tras el despliegue con Meta Pixel Helper y el Administrador de Eventos.
+- **Aviso de privacidad en español sigue en francés** (bloqueado por los datos de Roots);
+  conviene resolverlo antes de gastar en anuncios.
+- Artículo `camaras-instaladas-no-es-casa-protegida` publicado solo en español (video de
+  YouTube incrustado con `YouTubeEmbed`); versión en inglés pendiente.
+
 ## Imagen para compartir (Open Graph)
 
 `public/images/og-image.jpg` era la captura del template; se reemplazó (2026-11-21) por una

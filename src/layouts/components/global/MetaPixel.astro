@@ -1,0 +1,50 @@
+---
+// Meta Pixel (Facebook/Instagram Ads). El ID vive en config.toml → settings.metaPixelId.
+// Solo se activa en producción (import.meta.env.PROD) para no contaminar las
+// estadísticas con visitas de desarrollo. Vacío = no se carga nada.
+//   <MetaPixel />          → script, va en <head>
+//   <MetaPixel noscript /> → imagen de respaldo, va dentro de <body>
+import config from ".astro/config.generated.json";
+
+type Props = { noscript?: boolean };
+
+const { noscript = false } = Astro.props;
+const id = String(config.settings.metaPixelId || "").replace(/\D/g, "");
+const enabled = Boolean(id) && import.meta.env.PROD;
+---
+
+{
+  enabled && !noscript && (
+    <script is:inline define:vars={{ id }}>
+      !function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', id);
+fbq('track', 'PageView');
+// Conversión principal: clic en cualquier enlace a WhatsApp (botón flotante, CTA, artículos).
+// Meta no ve la conversación, solo el clic; es el mejor proxy disponible desde el sitio.
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest && e.target.closest('a[href*="wa.me/"]');
+  if (a && window.fbq) fbq('track', 'Contact');
+}, true);
+    </script>
+  )
+}
+{
+  enabled && noscript && (
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display:none"
+        alt=""
+        src={`https://www.facebook.com/tr?id=${id}&ev=PageView&noscript=1`}
+      />
+    </noscript>
+  )
+}
