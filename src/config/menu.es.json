@@ -116,7 +116,9 @@
         { "enable": true, "name": "Nosotros", "url": "/nosotros/" },
         { "enable": true, "name": "Precios", "url": "/precios/" },
         { "enable": true, "name": "Blog", "url": "/blog/" },
-        { "enable": true, "name": "Contacto", "url": "/contacto/" }
+        { "enable": true, "name": "Contacto", "url": "/contacto/" },
+        { "enable": true, "name": "Aviso de Privacidad", "url": "/privacy-policy/" },
+        { "enable": true, "name": "Términos y Condiciones", "url": "/terms-conditions/" }
       ]
     }
   ]

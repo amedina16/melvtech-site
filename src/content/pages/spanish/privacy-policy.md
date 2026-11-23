@@ -1,89 +1,111 @@
 ---
-title: "Politique de confidentialité"
-metaDescription: "Comprenez comment les informations personnelles transmises via ce site web sont collectées, utilisées, protégées et gérées."
+title: "Aviso de Privacidad"
+metaDescription: "Aviso de Privacidad integral de MelvTech: quién trata tus datos personales, para qué, con quién se comparten y cómo ejercer tus derechos ARCO."
 draft: false
 ---
 
-**Date d'entrée en vigueur : juillet 2022**
+**Última actualización: 23 de noviembre de 2026**
 
-Votre vie privée est importante pour nous, et nous nous engageons à protéger les informations personnelles que vous partagez avec nous. La présente Politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous consultez ce site web.
+Este es el Aviso de Privacidad integral del sitio web melvtech.com y de los canales de contacto de MelvTech (formulario, WhatsApp, teléfono y correo). Aquí explicamos qué datos recabamos, para qué los usamos, con quién los compartimos y cómo puedes ejercer tus derechos.
 
-## Informations que nous collectons
+## 1. Quién es el responsable de tus datos
 
-Nous collectons deux types d'informations vous concernant :
+**ESTRATEGIAS COMERCIALES Y SERVICIOS INTEGRALES-THE ROOTS** (en adelante, "Roots"), persona moral constituida conforme a las leyes de los Estados Unidos Mexicanos, con domicilio en Calle Segunda 213, Residencial Anáhuac, San Nicolás de los Garza, Nuevo León, C.P. 67140, es responsable del tratamiento de tus datos personales conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en adelante, la "Ley").
 
-- **Informations personnelles :**
-  - Nom
-  - Adresse e-mail
-  - Informations de facturation (par exemple, les détails de votre carte bancaire)
-  - Toute information que vous fournissez volontairement via des formulaires, des enquêtes ou la création d'un compte
+**MelvTech** es el nombre comercial bajo el que Roots atiende las solicitudes de domótica, redes, alarmas, videovigilancia y monitoreo para hogares y negocios.
 
-- **Informations non personnelles :**
-  - Adresse IP
-  - Type de navigateur
-  - Système d'exploitation
-  - Pages consultées et temps passé sur notre site
-  - Site web de provenance
+Para cualquier asunto sobre tus datos personales puedes escribir al área de Atención de datos personales: [atencion@melvtech.com](mailto:atencion@melvtech.com).
 
-## Comment nous utilisons vos informations
+## 2. Qué datos personales recabamos
 
-Nous utilisons les informations que nous collectons aux fins suivantes :
+**Cuando nos escribes por el formulario de contacto:**
 
-- Fournir et améliorer nos services
-- Traiter les transactions et envoyer des reçus
-- Vous envoyer des mises à jour, des promotions et des communications liées à nos services
-- Personnaliser votre expérience sur notre site web
-- Respecter nos obligations légales
-- Détecter et prévenir les activités frauduleuses
+- Nombre y correo electrónico.
+- Servicio que te interesa y si se trata de un proyecto nuevo o de mejorar un sistema existente.
+- Presupuesto estimado y fecha de inicio deseada, si decides indicarlos.
+- Tu preferencia de contacto (correo o teléfono) y el mensaje que escribas.
 
-## Cookies et technologies de suivi
+**Cuando nos contactas por WhatsApp, teléfono o correo:** tu número de teléfono o correo, el nombre de tu perfil y el contenido de los mensajes que nos envíes.
 
-Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience sur notre site web. Cela inclut :
+**Cuando navegas por el sitio:** datos técnicos como tu dirección IP, tipo de navegador y dispositivo, las páginas que visitas, y si haces clic en un enlace a WhatsApp. Se recaban mediante tecnologías de rastreo, como se explica en la sección 6.
 
-- **Cookies essentiels :** nécessaires au fonctionnement de notre site web.
-- **Cookies de performance :** nous aident à comprendre comment vous utilisez notre site.
-- **Cookies marketing :** suivent votre comportement de navigation à des fins de publicité ciblée.
+**Datos personales sensibles.** No los solicitamos. Te pedimos no incluir datos de salud, origen étnico, creencias religiosas, preferencia sexual u otros datos sensibles en tus mensajes.
 
-Vous pouvez gérer les cookies via les paramètres de votre navigateur.
+## 3. Para qué usamos tus datos
 
-## Partage des informations
+**Finalidades necesarias** (sin ellas no podemos atenderte):
 
-Nous ne vendons, ne louons ni n'échangeons vos informations personnelles. Toutefois, nous pouvons partager vos informations avec :
+- Responder tu solicitud o pregunta.
+- Elaborar y enviarte una cotización o proponerte un diagnóstico.
+- Agendar y dar seguimiento a la atención de tu solicitud.
+- Cumplir obligaciones legales aplicables.
 
-- **Prestataires de services :** des entreprises tierces qui nous aident à exploiter notre site web et à fournir nos services.
-- **Autorités légales :** lorsque la loi l'exige ou pour protéger nos droits et nos biens.
-- **Transferts d'activité :** en cas de fusion, d'acquisition ou de cession d'actifs.
+**Finalidades adicionales** (puedes oponerte sin que afecte la atención que solicitaste):
 
-## Sécurité des données
+- Medir cómo se usa el sitio y el desempeño de nuestros anuncios.
+- Mostrar publicidad de MelvTech en Facebook e Instagram a personas que visitaron el sitio.
 
-Nous mettons en œuvre des mesures de sécurité conformes aux normes du secteur pour protéger vos données. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100 %. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos informations personnelles, nous ne pouvons garantir une sécurité absolue.
+Si no quieres que usemos tus datos para las finalidades adicionales, escríbenos a [atencion@melvtech.com](mailto:atencion@melvtech.com) con el asunto "Limitación de uso". También puedes ajustar tus preferencias de anuncios en tu cuenta de Facebook o Instagram o bloquear las tecnologías de rastreo desde tu navegador.
 
-## Vos droits
+## 4. Con quién compartimos tus datos
 
-Selon votre lieu de résidence, vous pouvez disposer des droits suivants concernant vos informations personnelles :
+No vendemos tus datos personales. Para operar el sitio y atenderte utilizamos proveedores que tratan datos por nuestra cuenta:
 
-- Accéder à vos données
-- Corriger ou mettre à jour vos données
-- Demander la suppression de vos données
-- Limiter le traitement de vos données
-- Retirer votre consentement à l'utilisation de vos données
+- **Meta Platforms** (Facebook, Instagram y WhatsApp), por el Pixel de Meta y por la atención vía WhatsApp.
+- **FormSubmit**, servicio que recibe lo que escribes en el formulario y nos lo envía por correo.
+- **Cloudflare** y nuestro proveedor de alojamiento, que entregan el sitio y procesan datos técnicos de la conexión.
+- **Google (YouTube)**, solo si reproduces un video incrustado en el sitio.
 
-Pour exercer vos droits, veuillez nous contacter via le formulaire de contact du site web.
+Algunos de estos proveedores se encuentran fuera de México, por lo que tus datos pueden transferirse al extranjero. También podemos entregar datos a autoridades competentes cuando la ley lo exija.
 
-## Liens vers des tiers
+## 5. Medidas de seguridad
 
-Notre site web peut contenir des liens vers des sites web tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites web. Nous vous encourageons à consulter leurs politiques de confidentialité avant de fournir toute information personnelle.
+Aplicamos medidas administrativas, técnicas y físicas razonables para proteger tus datos contra pérdida, uso o acceso no autorizado. El sitio se entrega mediante una conexión cifrada (HTTPS).
 
-## Confidentialité des mineurs
+## 6. Tecnologías de rastreo (Pixel de Meta y videos)
 
-Notre site web n'est pas destiné aux personnes de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Si vous pensez que nous avons collecté de telles informations, veuillez nous contacter immédiatement.
+Este sitio usa el **Pixel de Meta**, que recaba información técnica sobre tu visita (páginas vistas y clics en los enlaces a WhatsApp) y la envía a Meta. La usamos para medir nuestros anuncios y mostrarte publicidad de MelvTech.
 
-## Modifications de la présente Politique de confidentialité
+Los videos de YouTube incrustados no se cargan hasta que presionas reproducir y usan el modo de privacidad ampliada de YouTube.
 
-Nous pouvons mettre à jour la présente Politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une « Date d'entrée en vigueur » actualisée. Nous vous encourageons à consulter régulièrement la présente Politique de confidentialité.
+Puedes limitar estas tecnologías desde la configuración de tu navegador, con extensiones que bloqueen rastreadores o desde tus preferencias de anuncios en Facebook e Instagram.
 
-## Nous contacter
+## 7. Tus derechos ARCO y revocación del consentimiento
 
-Si vous avez des questions ou des préoccupations concernant la présente Politique de confidentialité, veuillez nous contacter via le formulaire de contact du site web.
+Tienes derecho a **acceder** a tus datos, **rectificarlos** si son inexactos o están incompletos, **cancelarlos** u **oponerte** a su tratamiento (derechos ARCO). También puedes **revocar** el consentimiento que nos hayas dado.
 
-Merci de nous accorder votre confiance avec vos informations personnelles.
+Para ejercerlos, envía tu solicitud a [atencion@melvtech.com](mailto:atencion@melvtech.com) con el asunto "Derechos ARCO", e incluye:
+
+1. Tu nombre y un domicilio o medio para recibir notificaciones.
+2. Documentos que acrediten tu identidad (o la de tu representante legal).
+3. Una descripción clara y precisa de los datos sobre los que quieres ejercer el derecho, salvo que se trate del derecho de acceso.
+4. El derecho que deseas ejercer o lo que solicitas.
+5. Cualquier otro elemento que ayude a localizar tus datos.
+
+Si pides una rectificación, indica además qué debe corregirse y adjunta la documentación que lo respalde.
+
+Te responderemos en un máximo de **veinte días hábiles** contados desde que recibamos tu solicitud. Si resulta procedente, la haremos efectiva en los **quince días hábiles** siguientes a la respuesta. Estos plazos pueden ampliarse una sola vez por un periodo igual cuando las circunstancias lo justifiquen. El ejercicio de los derechos ARCO es gratuito; solo podrían cobrarse los costos de reproducción, copias o envío.
+
+## 8. Cuánto tiempo conservamos tus datos
+
+Conservamos tus datos durante el tiempo necesario para atender tu solicitud y cumplir con las obligaciones legales aplicables. Después los eliminamos o los anonimizamos.
+
+## 9. Menores de edad
+
+Este sitio está dirigido a personas mayores de edad. Si detectamos que recabamos datos de un menor sin la autorización de su madre, padre o tutor, los eliminaremos.
+
+## 10. Servicios contratados
+
+Este aviso aplica a los datos obtenidos mediante el sitio y los canales de contacto indicados. Si contratas un servicio, este aviso se complementa con la cotización o el contrato correspondiente.
+
+## 11. Cambios a este aviso
+
+Cuando modifiquemos este aviso publicaremos la versión actualizada en esta misma página, con su fecha de actualización. Si los cambios son importantes, lo indicaremos de forma destacada en el sitio.
+
+## 12. Autoridad
+
+Si consideras que tus derechos fueron vulnerados, puedes acudir a la Secretaría Anticorrupción y Buen Gobierno, autoridad en materia de protección de datos personales en posesión de particulares.
+
+## 13. Legislación aplicable
+
+Este aviso se rige por la legislación de los Estados Unidos Mexicanos. Para su interpretación y cumplimiento, las partes se someten a los tribunales competentes de Monterrey, Nuevo León, sin perjuicio de los derechos que la ley otorga a los consumidores.

@@ -1,64 +1,65 @@
 ---
-title: "Conditions générales"
-metaDescription: "Consultez les conditions qui s'appliquent lorsque les visiteurs utilisent ce site web, son contenu et ses formulaires de contact."
+title: "Términos y Condiciones"
+metaDescription: "Términos y condiciones de uso del sitio web de MelvTech: alcance de la información, cotizaciones, contenido del blog, propiedad intelectual y ley aplicable."
 draft: false
 ---
 
-**Date d'entrée en vigueur :** juillet 2022
+**Última actualización: 23 de noviembre de 2026**
 
-En accédant à ce site web ou en l'utilisant, vous acceptez de respecter et d'être lié par les conditions générales suivantes (les « Conditions »). Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser ce site web.
+Estos Términos y Condiciones regulan el uso del sitio web melvtech.com (el "Sitio"). Al navegar por el Sitio o usar sus formularios y canales de contacto aceptas estos términos. Si no estás de acuerdo con ellos, te pedimos no usar el Sitio.
 
-## Acceptation des conditions
+## 1. Quién ofrece el Sitio
 
-En accédant au site web ou en l'utilisant, vous confirmez que vous êtes âgé d'au moins 18 ans ou que vous disposez du consentement légal d'un parent ou tuteur. Votre utilisation continue du site web constitue votre acceptation de ces Conditions.
+El Sitio es operado por **ESTRATEGIAS COMERCIALES Y SERVICIOS INTEGRALES-THE ROOTS** ("Roots"), persona moral mexicana con domicilio en Calle Segunda 213, Residencial Anáhuac, San Nicolás de los Garza, Nuevo León, C.P. 67140. **MelvTech** es el nombre comercial bajo el que Roots ofrece sus servicios y atiende las solicitudes.
 
-## Utilisation du site web
+Puedes contactarnos en [atencion@melvtech.com](mailto:atencion@melvtech.com) o por WhatsApp y teléfono al 81 4076 7160.
 
-Vous acceptez d'utiliser le site web uniquement à des fins licites et d'une manière qui ne porte pas atteinte aux droits d'autrui ni ne restreint leur utilisation du site web. Les utilisations interdites comprennent, sans s'y limiter :
+## 2. Qué ofrecemos
 
-- Toute activité illégale.
-- Toute tentative d'accès non autorisé au site web ou à ses serveurs.
-- L'introduction de logiciels ou de codes nuisibles, tels que des virus ou des programmes malveillants.
-- L'usurpation de votre identité ou de vos affiliations.
+Diseñamos, instalamos y damos soporte a sistemas de domótica, redes y WiFi, alarmas, videovigilancia y monitoreo para hogares, así como servicios para empresas como control de accesos, cableado estructurado, infraestructura de redes, administración de servidores y pólizas de soporte técnico. Atendemos Monterrey y su área metropolitana.
 
-## Comptes utilisateurs
+## 3. La información del Sitio es informativa
 
-Si vous créez un compte sur notre site web, vous êtes responsable du maintien de la confidentialité de vos identifiants de connexion. Vous acceptez de nous informer immédiatement de toute utilisation non autorisée de votre compte. Nous nous réservons le droit de résilier les comptes qui enfreignent ces Conditions.
+El contenido del Sitio describe nuestros servicios de forma general y **no constituye una oferta vinculante**. No publicamos precios cerrados porque el costo depende de cada proyecto. El alcance, el precio, los tiempos y las condiciones de cada servicio se establecen en la **cotización o el contrato** que acordemos contigo. Solicitar una cotización no te obliga a contratar.
 
-## Propriété intellectuelle
+## 4. Contenido del blog y de los videos
 
-L'ensemble du contenu du site web, y compris, sans s'y limiter, les textes, images, logos et logiciels, est protégé par les lois sur le droit d'auteur, les marques de commerce et d'autres lois relatives à la propriété intellectuelle. Vous ne pouvez reproduire, distribuer ou modifier aucun contenu sans notre consentement écrit préalable.
+Los artículos y videos tienen fines informativos. Describen configuraciones y recomendaciones generales y las experiencias de nuestro equipo. **No son asesoría profesional personalizada ni garantizan que un sistema de seguridad evite delitos o incidentes.** Las necesidades de cada inmueble son distintas y conviene que un profesional las evalúe.
 
-## Achats et paiements
+Cuando citamos cifras de terceros, como las de la ENVIPE del INEGI, indicamos la fuente. Pueden actualizarse o cambiar después de su publicación.
 
-Tous les achats effectués sur le site web sont soumis à nos conditions de tarification et de paiement. Vous acceptez de fournir des informations de paiement exactes et nous autorisez à débiter votre moyen de paiement des montants convenus. Les remboursements, le cas échéant, seront traités conformément à notre Politique de remboursement.
+## 5. Uso permitido del Sitio
 
-## Exclusion de garanties
+Te comprometes a usar el Sitio de forma lícita y a no:
 
-Le site web et son contenu sont fournis « en l'état », sans garantie d'aucune sorte, expresse ou implicite. Nous ne garantissons pas que le site web sera exempt d'erreurs, sécurisé ou disponible à tout moment.
+- Enviar información falsa o que pertenezca a otra persona.
+- Intentar acceder sin autorización a los sistemas del Sitio o interferir con su funcionamiento.
+- Usar el Sitio para enviar mensajes no solicitados o con fines ilícitos.
 
-## Limitation de responsabilité
+## 6. Comunicaciones por formulario, WhatsApp y correo
 
-Dans toute la mesure permise par la loi, nous ne saurions être tenus responsables de tout dommage indirect, accessoire, spécial ou consécutif découlant de votre utilisation du site web ou de votre incapacité à y accéder. Notre responsabilité totale pour toute réclamation liée au site web ne dépassera pas le montant que vous nous avez versé, le cas échéant.
+Cuando nos escribes por estos medios, nos autorizas a responderte por el mismo canal o por el medio de contacto que indiques. No garantizamos tiempos de respuesta inmediatos. El tratamiento de tus datos se describe en nuestro [Aviso de Privacidad](/privacy-policy/).
 
-## Résiliation
+## 7. Propiedad intelectual
 
-Nous nous réservons le droit de suspendre ou de résilier votre accès au site web à notre seule discrétion, sans préavis, si nous estimons que vous avez enfreint ces Conditions ou toute loi applicable.
+El Sitio y su contenido, incluidos textos, imágenes, videos, diseño, logotipos y la marca MelvTech, pertenecen a Roots o se utilizan con autorización de sus titulares y están protegidos por las leyes aplicables. No puedes reproducirlos, distribuirlos ni modificarlos sin nuestra autorización previa y por escrito, salvo para el uso personal y no comercial que la ley permita.
 
-## Liens vers des tiers
+## 8. Enlaces y servicios de terceros
 
-Notre site web peut contenir des liens vers des sites web tiers. Nous ne sommes pas responsables du contenu ou des pratiques de ces sites web. Vous utilisez les sites tiers à vos propres risques.
+El Sitio puede incluir enlaces y contenido de terceros, como videos de YouTube o conversaciones de WhatsApp. No controlamos esos servicios ni sus políticas, y no somos responsables de su contenido ni de su disponibilidad. Su uso se rige por los términos de cada proveedor.
 
-## Droit applicable
+## 9. Disponibilidad del Sitio
 
-Les présentes Conditions sont régies et interprétées conformément aux lois de l'État d'Imaginary, aux États-Unis, sans égard à ses principes de conflit de lois. Tout litige découlant des présentes Conditions sera résolu devant les tribunaux situés à Imaginary City, aux États-Unis.
+Procuramos mantener el Sitio disponible y actualizado, pero no garantizamos que funcione sin interrupciones ni errores. Podemos modificar, suspender o retirar contenido en cualquier momento.
 
-## Modifications des conditions
+## 10. Limitación de responsabilidad
 
-Nous nous réservons le droit de mettre à jour ou de modifier ces Conditions à tout moment, sans préavis. Toute modification prendra effet immédiatement dès sa publication sur cette page. Votre utilisation continue du site web constitue l'acceptation des Conditions révisées.
+En la medida que la ley lo permita, Roots no será responsable por daños derivados del uso del Sitio o de la imposibilidad de usarlo, ni por decisiones que tomes con base únicamente en su contenido informativo. Nada en estos términos limita los derechos que la ley te otorga como consumidor ni la responsabilidad que no pueda excluirse conforme a la ley.
 
-## Nous contacter
+## 11. Cambios a estos términos
 
-Si vous avez des questions ou des préoccupations concernant ces Conditions, veuillez nous contacter via le formulaire de contact du site web.
+Podemos actualizar estos términos. Publicaremos la versión vigente en esta página con su fecha de actualización. Si sigues usando el Sitio después de la publicación, entendemos que aceptas los cambios.
 
-Merci de votre visite sur ce site web.
+## 12. Ley aplicable y jurisdicción
+
+Estos términos se rigen por las leyes de los Estados Unidos Mexicanos. Para su interpretación y cumplimiento, las partes se someten a los tribunales competentes de Monterrey, Nuevo León, sin perjuicio de los derechos que la ley otorga a los consumidores.

@@ -20,9 +20,13 @@ Abiertos:
 - ~~**Testimonios y equipo demo**~~ Testimonios ocultos en ambos idiomas
   (`enable: false`); páginas `/team/` y su contenido demo eliminados (colección, rutas y
   componentes `Team*`).
-- **Aviso de Privacidad (ES y EN)** (LFPDPPP; el formulario recolecta datos personales).
-  Privacidad y Términos siguen en francés. Requiere razón social y domicilio fiscal;
-  revisión legal recomendada.
+- ~~**Aviso de Privacidad y Términos (ES y EN)**~~ Redactados el 2026-11-23 (responsable:
+  ESTRATEGIAS COMERCIALES Y SERVICIOS INTEGRALES-THE ROOTS, MelvTech como nombre comercial;
+  domicilio tomado del aviso de IKPulse, otra empresa de Roots). Se basan en la LFPDPPP vigente
+  (nueva ley del 20-03-2025; autoridad: Secretaría Anticorrupción y Buen Gobierno, no el INAI).
+  Enlazados desde el pie de página y con aviso simplificado junto al formulario.
+  **Pendiente: revisión por un abogado** y confirmar domicilio a publicar, correo ARCO
+  (`atencion@melvtech.com`) y si se agrega banner de consentimiento para el Pixel.
 - **FormSubmit**: tras publicar, enviar un mensaje de prueba por `/contacto/` y activar
   el enlace que llegará a `atencion@melvtech.com`; sin eso los leads no llegan.
 - **Hosting: Dokploy.** `Dockerfile`, `deploy/` y guía en `docs/despliegue-dokploy.md`. Imagen probada en
@@ -66,10 +70,11 @@ existe. Se resuelve al apagar el inglés (bloqueador #1 de arriba).
   (`settings.contactInfo.address`) están vacíos y el sitio los omite automáticamente; al
   llenarlos reaparecen en topbar, footer y menú lateral. El horario del theme era
   inventado y se eliminó.
-- Razón social: el sitio factura **Roots**; MelvTech es solo el nombre comercial. Faltan
-  razón social completa y domicilio fiscal de Roots para el Aviso de Privacidad y Términos.
+- Razón social: el sitio factura **Roots** (ESTRATEGIAS COMERCIALES Y SERVICIOS
+  INTEGRALES-THE ROOTS); MelvTech es solo el nombre comercial. RFC no publicado ni necesario
+  en el aviso.
 
-## Meta Pixel y anuncios (2026-11-24)
+## Meta Pixel y anuncios (2026-11-23)
 
 - Pixel `1612424540685150` en todo el sitio (`MetaPixel.astro`, ID en `config.toml` →
   `settings.metaPixelId`; solo se carga en producción). Eventos: `PageView` y `Contact` al
@@ -77,8 +82,7 @@ existe. Se resuelve al apagar el inglés (bloqueador #1 de arriba).
 - Falta el evento del formulario: FormSubmit redirige fuera del sitio, hace falta una
   página de "gracias" propia para medirlo bien.
 - Verificar tras el despliegue con Meta Pixel Helper y el Administrador de Eventos.
-- **Aviso de privacidad en español sigue en francés** (bloqueado por los datos de Roots);
-  conviene resolverlo antes de gastar en anuncios.
+- Aviso de privacidad redactado (ver arriba); conviene la revisión legal antes de gastar en anuncios.
 - Artículo `camaras-instaladas-no-es-casa-protegida` publicado solo en español (video de
   YouTube incrustado con `YouTubeEmbed`); versión en inglés pendiente.
 

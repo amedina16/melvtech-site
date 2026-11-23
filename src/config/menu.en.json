@@ -172,6 +172,16 @@
           "enable": true,
           "name": "Contact",
           "url": "/contacto/"
+        },
+        {
+          "enable": true,
+          "name": "Privacy Notice",
+          "url": "/privacy-policy/"
+        },
+        {
+          "enable": true,
+          "name": "Terms and Conditions",
+          "url": "/terms-conditions/"
         }
       ]
     }

@@ -21,9 +21,9 @@ form:
     # rel: "" # Optional
     # target: "" # Optional
 
-  # This note will show at the end of form
-  # note: |
-  #   Your data is safe with us. We respect your privacy and never share your information. <br /> Read our [Privacy Policy](/privacy-policy/).
+  # Aviso de privacidad simplificado (art. 16 LFPDPPP): se muestra al final del formulario.
+  note: |
+    Tus datos los trata ESTRATEGIAS COMERCIALES Y SERVICIOS INTEGRALES-THE ROOTS (MelvTech), con domicilio en Calle Segunda 213, Residencial Anáhuac, San Nicolás de los Garza, N.L., C.P. 67140, para responder tu solicitud, cotizar y darle seguimiento. Para limitar el uso de tus datos escribe a [atencion@melvtech.com](mailto:atencion@melvtech.com). Consulta el [Aviso de Privacidad integral](/privacy-policy/).
   inputs:
     - label: "Tu nombre"
       name: "Name"

@@ -21,9 +21,9 @@ form:
     # rel: "" # Optional
     # target: "" # Optional
 
-  # This note will show at the end of form
-  # note: |
-  #   Your data is safe with us. We respect your privacy and never share your information. <br /> Read our [Privacy Policy](/privacy-policy/).
+  # Simplified privacy notice (art. 16 of the Mexican data protection law): shown at the end of the form.
+  note: |
+    Your data is processed by ESTRATEGIAS COMERCIALES Y SERVICIOS INTEGRALES-THE ROOTS (MelvTech), at Calle Segunda 213, Residencial Anáhuac, San Nicolás de los Garza, N.L., C.P. 67140, Mexico, to respond to your request, prepare a quote and follow up. To limit the use of your data, write to [atencion@melvtech.com](mailto:atencion@melvtech.com). Read the full [Privacy Notice](/en/privacy-policy/).
   inputs:
     - label: "Your name"
       name: "Name"
